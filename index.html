@@ -1,0 +1,1383 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#183b30">
+<title>Sent. What Next? · FoodLoop Hearing Case File B5</title>
+<style>
+:root{
+ --green:#183b30;--accent:#6A9C89;--mint:#dce7df;--lime:#d8ed9d;--orange:#c66b41;
+ --green-panel:#e9edde;--green-wash:#e9efe1;--paper:#f5f3ec;--sheet:#fffef9;--white:#fffef9;
+ --ink:#233a31;--muted:#657168;--line:#d9ddd2;
+ --serif:"Songti SC","STSong","Noto Serif CJK SC",serif;--sans:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;--mono:"SFMono-Regular",Consolas,monospace
+}
+*{box-sizing:border-box}body{margin:0;background:var(--sheet);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.65}button,textarea,select{font:inherit;color:inherit}button,summary,select{cursor:pointer}button{border:1px solid transparent}button:disabled{cursor:default;opacity:.55}a{color:var(--green);text-underline-offset:3px}button:focus-visible,a:focus-visible,summary:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--green);outline-offset:3px}[hidden]{display:none!important}h1,h2,h3,h4,p,blockquote{margin:0}p+p{margin-top:8px}h1,h2{font-family:var(--serif);font-weight:650;line-height:1.18}h1{font-size:clamp(46px,7vw,86px);letter-spacing:-.055em}h2{font-size:clamp(32px,4.2vw,54px);letter-spacing:-.04em}h3{font-size:17px;line-height:1.35}.mono,.eyebrow{font-family:var(--mono);letter-spacing:.13em;font-size:11px;font-weight:600}.muted,.footnote{color:var(--muted)}.footnote{font-size:12px}.dot{display:inline-block;width:7px;height:7px;background:var(--accent);border-radius:100%;vertical-align:middle;margin:0 7px}.wrap{width:min(1120px,calc(100% - 64px));margin-inline:auto}.skip{position:absolute;left:16px;top:-100px;background:var(--sheet);padding:8px 12px;z-index:4}.skip:focus{top:6px}
+.site-head{border-bottom:1px solid var(--line)}.topbar,.brand,.head-right{display:flex;align-items:center;gap:12px}.topbar{justify-content:space-between;min-height:72px}.brand b{display:block;font-size:21px;letter-spacing:-.045em;line-height:1.05}.brand small{font:9px var(--mono);letter-spacing:.14em}.brand-mark{width:35px;height:35px;flex:none}.head-right{gap:16px}.head-right .mono{color:var(--muted)}.link-button{padding:4px 2px;background:none;border:0;border-bottom:1px solid var(--line);font-size:13px;text-align:left}.link-button:hover{border-color:var(--green)}.primary,.secondary{padding:10px 16px;border-radius:3px;font-weight:650;min-height:44px}.primary{color:var(--sheet);background:var(--green)}.primary:hover{background:#28594e}.secondary{background:transparent;border-color:var(--line)}.secondary:hover{background:var(--green-wash)}
+.entry{padding:47px 0 34px}.hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:54px;padding-bottom:30px}.hero .eyebrow{margin-bottom:15px}.hero h1 span{box-shadow:inset 0 -.19em var(--mint)}.hero-copy>p:last-child{margin-top:18px;color:var(--muted);font-size:15px}.date-pair{display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr);gap:12px;align-items:center}.date-pair>div{min-width:0}.date-pair small{display:block;color:var(--muted);font-size:11px}.date-pair time{display:block;font:clamp(21px,3.1vw,32px) var(--mono);letter-spacing:-.065em;line-height:1.25;white-space:nowrap}.date-pair .arrow{font:20px var(--mono);color:var(--green);text-align:center}.entry-roles{border-top:1px solid var(--line);padding-top:19px}.roles-heading{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:12px}.role-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.seat-card{position:relative;text-align:left;background:var(--sheet);border:1px solid var(--line);border-radius:3px;display:flex;flex-direction:column;align-items:flex-start;gap:9px;padding:15px;min-width:0;min-height:153px}.seat-card:hover{background:var(--green-wash);border-color:var(--accent)}.seat-mark,.seat-initials{display:flex;align-items:center;justify-content:center;width:35px;height:35px;border-radius:50%;background:var(--green-wash);font:14px var(--serif);flex:none}.seat-card .seat-name{font:650 21px var(--serif);line-height:1.1;overflow-wrap:anywhere}.seat-card .seat-kind{font-size:12px;color:var(--muted)}.entry-foot,.site-foot{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;color:var(--muted);font-size:11px}.entry-foot{margin-top:14px}.site-foot{padding:17px 0 24px;border-top:1px solid var(--line)}
+.hearing{padding:25px 0 37px}.seat-strip{display:flex;align-items:center;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px}.seat-current{display:flex;align-items:center;gap:10px}.seat-current b{display:block;line-height:1.2;font-family:var(--serif);font-size:20px}.seat-current small{display:block;color:var(--muted);font-size:11px}.hearing-grid{display:grid;grid-template-columns:minmax(0,1fr) 225px;gap:29px;padding-top:23px;align-items:start}.side-rail{min-width:0;grid-column:2;grid-row:1}.steps{display:grid;gap:3px;padding:0;margin:0 0 15px;list-style:none}.step{display:flex;align-items:center;gap:10px;min-height:38px;padding:6px 9px;border-left:2px solid var(--line);font-size:12px;color:var(--muted)}.step span{font-family:var(--mono);font-size:11px}.step[aria-current=step]{border-color:#6b8e59;background:var(--green-wash);font-weight:650;color:var(--green)}.material-tools{border-top:1px solid var(--line);padding-top:12px}.material-tools summary{font-size:13px;font-weight:650;min-height:34px;padding:3px 0}.material-grid{display:grid;gap:5px}.material-grid button{text-align:left;font-size:12px;padding:6px 8px;background:var(--sheet);border-color:var(--line);border-radius:2px;min-height:34px}.material-grid button:hover{background:var(--green-wash)}.stage{min-width:0;grid-column:1;grid-row:1}.stage-heading{margin-bottom:14px}.stage-heading .eyebrow{color:var(--muted);margin-bottom:5px}.stage-heading p{margin-top:8px;font-size:13px;color:var(--muted)}.voices{background:var(--sheet);border:1px solid var(--line);border-radius:3px;padding:2px 17px}.voice{display:grid;grid-template-columns:65px minmax(0,1fr);gap:9px;align-items:baseline;padding:11px 0}.voice+.voice{border-top:1px solid #dfe6d9}.voice b{font-family:var(--serif);font-size:15px}.voice q{font-size:15px;line-height:1.55}.voice.own-voice q{font-weight:650}.actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:13px}.access-line{padding:7px 11px;background:var(--green-wash);border-left:2px solid var(--accent);font-size:12px;margin:0 0 10px}.summary-card{border:1px solid var(--line);padding:10px 13px;background:var(--sheet);border-radius:3px}.summary-card .eyebrow{font-size:10px;color:var(--muted);margin-bottom:3px}.summary-card p{font-size:13px}.record-card{border:1px solid #c4d2bc;border-radius:3px;padding:10px 13px;background:var(--sheet);margin:8px 0}.record-card h3{font-size:13px}.record-card .date-pair{padding:7px 0 4px}.record-card .date-pair time{font-size:clamp(19px,3.3vw,29px)}.record-card .footnote{font-size:11px;line-height:1.45}.evidence-limit{font-size:12px;color:var(--muted);margin:7px 0}.opinion-form{margin-top:12px;padding-top:11px;border-top:1px solid var(--line)}.opinion-head{display:flex;align-items:baseline;justify-content:space-between;gap:9px;flex-wrap:wrap;margin-bottom:6px}.opinion-head label{font-weight:650;font-size:14px}.opinion-head button{font-size:11px}.opinion-form textarea{display:block;width:100%;resize:vertical;min-height:61px;padding:8px 10px;border:1px solid #b9c9b4;border-radius:3px;background:var(--sheet);font-size:13px;line-height:1.5}.opinion-form textarea::placeholder{color:#65736a}.previous-note{font-size:12px;color:var(--muted);margin:6px 0;overflow-wrap:anywhere}.previous-note q,.comparison q{white-space:pre-wrap}.comparison{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}.comparison>div{padding:11px 13px;border:1px solid var(--line);border-radius:3px;background:var(--sheet);min-width:0;overflow-wrap:anywhere}.comparison p{font-size:13px}.comparison h3{font-size:13px;margin-bottom:4px}.review-end{margin-top:13px;padding:12px 14px;background:var(--green-wash);border-left:2px solid var(--accent)}.review-end p{font-size:13px;margin-top:5px}.status{min-height:1.3em;font-size:11px;color:var(--muted)}
+dialog{width:min(720px,calc(100% - 32px));max-height:calc(100dvh - 48px);padding:0;border:1px solid #aebea6;border-radius:5px;background:var(--sheet);color:var(--ink);box-shadow:0 20px 65px #152d3a28}dialog::backdrop{background:#14261cb0}.dialog-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 17px;background:var(--green-wash);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:1}.dialog-head h2{font-size:23px}.dialog-head button{padding:4px 11px;min-height:34px}.dialog-body{padding:15px 17px 19px;font-size:13px}.dialog-body>p+p{margin-top:9px}.dialog-body details{border-top:1px solid var(--line);padding:7px 0}.dialog-body summary{font-weight:650;padding:4px 0}.dialog-body details p{margin:4px 0 8px}.doc-tabs{display:flex;flex-wrap:wrap;gap:5px;margin:9px 0 11px}.doc-tabs button{padding:6px 9px;border:1px solid var(--line);border-radius:3px;background:var(--paper);font-size:12px}.doc-tabs button[aria-pressed=true]{background:var(--green);color:var(--sheet)}.doc-timeline{padding-left:23px;margin:7px 0}.doc-timeline li{margin-bottom:9px}.doc-timeline small{display:block;color:var(--muted)}.doc-timeline p{margin-top:2px}.doc-claims{margin-top:9px}.dialogue-line{display:grid;grid-template-columns:61px minmax(0,1fr);gap:9px;padding:7px 0;border-top:1px solid var(--line)}.dialogue-line .speaker{font-weight:650}.dialogue-line p{margin:0!important}.doc-select{width:100%;border:1px solid var(--line);background:var(--paper);border-radius:3px;padding:7px 9px;margin:5px 0 12px}.doc-evidence{padding:12px;border:1px solid var(--line);border-radius:3px}.doc-evidence h3{font-size:15px}.evidence-topline{display:flex;flex-wrap:wrap;gap:7px;justify-content:space-between;margin-bottom:8px;color:var(--muted);font-size:10px}.record-strip{display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr);gap:10px;align-items:center;padding:9px 11px;margin:8px 0;background:var(--green-wash)}.date-value small{display:block;font-size:10px;color:var(--muted)}.date-value time{font:clamp(17px,3vw,24px) var(--mono);white-space:nowrap}.record-meta,.record-notice,.evidence-note{font-size:11px;color:var(--muted);margin:7px 0}.log-row{display:grid;grid-template-columns:66px minmax(0,1fr);gap:10px;border-top:1px solid var(--line);padding:7px 0;font-size:12px}.log-row>time{font:11px var(--mono);padding-top:3px}.gateway{font-family:var(--mono);background:var(--green-wash);overflow-wrap:anywhere}.listing-mock,.summary-paper,.chat-mock,.locked-record{background:var(--paper);border:1px solid var(--line);padding:10px 12px;border-radius:3px}.listing-header,.listing-row{display:flex;gap:12px;justify-content:space-between}.listing-useby{font-weight:650}.listing-foot,.chat-meta{font-size:11px;color:var(--muted)}.chat-mock>div{margin-bottom:6px}.chat-mock .right{text-align:right}.bubble{display:inline-block;background:var(--green-wash);padding:4px 8px;border-radius:3px}.pack-evidence{background:#e5e8d9;border:1px solid var(--line);padding:16px;margin-top:7px}.pack-evidence .label{background:var(--sheet);border:1px solid var(--line);padding:8px 10px;font:12px/1.6 var(--mono)}.photo-label,.source-tag{font-size:10px;color:var(--muted)}.lock-symbol{height:29px}.redacted{display:none}.source-list{padding-left:19px}.source-list li{margin:4px 0}
+@media(max-width:840px){.wrap{width:calc(100% - 36px)}.hero{gap:24px}.hearing-grid{grid-template-columns:minmax(0,1fr) 150px;gap:17px}.role-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.seat-card{min-height:124px}.entry{padding-top:32px}}
+@media(max-width:580px){.wrap{width:calc(100% - 28px)}.topbar{min-height:61px}.head-right .mono,.brand small{display:none}.hero{grid-template-columns:1fr;gap:14px;padding-bottom:20px}.hero .eyebrow{margin-bottom:7px}.hero h1{font-size:49px}.hero-copy>p:last-child{margin-top:11px;font-size:13px}.entry{padding:19px 0 20px}.entry-roles{padding-top:11px}.roles-heading .footnote{display:none}.role-grid{gap:7px}.seat-card{min-height:111px;padding:10px;gap:5px}.seat-card .seat-name{font-size:18px}.seat-mark{width:27px;height:27px;font-size:11px}.seat-card .seat-kind{font-size:11px}.entry-foot,.site-foot{flex-wrap:wrap}.hearing{padding-top:13px}.hearing-grid{display:flex;flex-direction:column;gap:9px;padding-top:11px}.side-rail,.stage{width:100%}.steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:3px;margin-bottom:3px}.step{min-height:27px;font-size:10px;padding:3px 4px;gap:5px}.step span{font-size:9px}.material-tools{border-top:0;padding:0}.material-tools summary{min-height:27px;font-size:11px;padding:2px 0}.material-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:4px}.stage-heading{margin-bottom:9px}.stage-heading .eyebrow{font-size:10px}.stage-heading h2{font-size:31px}.stage-heading p{font-size:12px}.voices{padding-inline:10px}.voice{grid-template-columns:49px minmax(0,1fr);gap:5px;padding-block:8px}.voice b{font-size:13px}.voice q{font-size:13px}.record-card .footnote,.evidence-limit{font-size:10px}.actions{gap:8px}.primary,.secondary{padding:8px 11px;font-size:13px}.comparison{grid-template-columns:1fr}.date-pair{gap:6px;grid-template-columns:minmax(0,1fr) 18px minmax(0,1fr)}.record-card .date-pair time{font-size:20px}.dialog-head h2{font-size:20px}}
+.hero{
+ margin-bottom:15px;padding:clamp(18px,3vw,39px);
+ background:var(--green-panel);color:var(--green);border:1px solid var(--line);border-radius:3px
+}
+.hero h1 span{box-shadow:inset 0 -.19em #c1d2b5}
+.access-preview{margin-bottom:16px;padding:10px 14px;background:var(--green-wash);border:1px solid var(--line);border-radius:3px}
+.access-preview>p{font-size:13px}
+.access-preview>p span{margin-left:8px;color:var(--muted)}
+.access-preview dl{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;margin:6px 0 0}
+.access-preview dl div{display:flex;align-items:baseline;gap:8px}
+.access-preview dt{flex:none;width:20px;border-radius:2px;background:var(--sheet);text-align:center;font:600 12px/20px var(--mono)}
+.access-preview dl div+div dt{background:var(--green);color:var(--sheet)}
+.access-preview dd{margin:0;font-size:13px}
+.case-beats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;list-style:none;margin:0 0 6px;padding:0}
+.case-beats li{padding:7px 9px;background:var(--green-wash);border-top:2px solid #92a982;font-size:12px}
+.case-beats strong,.case-beats li>span{display:block}
+.case-beats li>span{color:var(--muted)}
+.case-context{margin-bottom:10px}
+.hero-exhibits{position:relative;isolation:isolate;container-type:inline-size;justify-self:center;width:min(100%,410px);aspect-ratio:1.53;margin:0;background:radial-gradient(ellipse,#c1d2b5 0,transparent 70%)}
+.hero-exhibits figcaption{position:absolute;top:1%;left:7%;color:var(--muted)}
+.exhibit-pack{position:absolute;top:15%;left:7%;width:65%;transform:rotate(-9deg);filter:drop-shadow(3px 10px 10px #24372c2d)}
+.exhibit-pack svg{display:block;width:100%;height:auto}
+.exhibit-label,.exhibit-slip{background:var(--sheet);border:1px solid #b8c7b1;color:var(--green)}
+.exhibit-label{position:absolute;top:52%;left:7%;padding:2.1cqi 2.6cqi}
+.exhibit-label small,.exhibit-slip small{display:block;font-size:clamp(8px,2.5cqi,11px);white-space:nowrap}
+.exhibit-label time,.exhibit-slip time{display:block;font:600 clamp(14px,5cqi,23px)/1.25 var(--mono);white-space:nowrap}
+.exhibit-slip{position:absolute;top:40%;left:55%;width:40%;padding:3cqi;border-top:4px solid var(--green);transform:rotate(8deg);box-shadow:3px 10px 20px #24372c2a}
+.exhibit-slip time{padding-block:2.8cqi 1.2cqi}
+.exhibit-slip span{display:block;border-top:1px dashed var(--line);padding-top:1.4cqi;font-size:clamp(8px,2.5cqi,11px)}
+.exhibit-stamp{position:absolute;top:83%;left:12%;border:1px solid #a45b3c;color:#8c4e35;padding:1cqi 2cqi;transform:rotate(-7deg);font-size:clamp(9px,3cqi,12px);font-weight:650;letter-spacing:.08em}
+.seat-option{position:relative;cursor:pointer}
+.seat-choice{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.seat-option .seat-card{height:100%}
+.seat-option:hover .seat-card{background:var(--green-wash);border-color:var(--accent)}
+.seat-card-top{display:flex;justify-content:space-between;align-items:center;gap:6px;width:100%}
+.seat-number,.seat-tick{font-size:10px;color:var(--muted)}
+.seat-tick{border:1px solid var(--line);border-radius:12px;padding:1px 7px;white-space:nowrap}
+.seat-tick .chosen,.seat-choice:checked+.seat-card .empty{display:none}
+.seat-choice:checked+.seat-card .chosen{display:inline}
+.seat-card q{font:650 17px/1.4 var(--serif)}
+.seat-choice:focus-visible+.seat-card{outline:3px solid var(--green);outline-offset:3px}
+.seat-choice:checked+.seat-card{background:var(--green);border-color:var(--green);color:var(--sheet);box-shadow:0 4px 0 var(--mint)}
+.seat-choice:checked+.seat-card :is(.seat-kind,.seat-number){color:var(--mint)}
+.seat-choice:checked+.seat-card :is(.seat-tick,.seat-mark){background:var(--mint);color:var(--green);border-color:var(--mint)}
+.seat-confirm{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;padding:8px 12px;background:var(--green-wash);font-size:13px}
+.stage-heading{margin:15px 0 0;scroll-margin-top:14px}
+.stage-heading h2:focus-visible{width:fit-content;outline:2px solid currentColor;outline-offset:5px}
+.stage-heading[data-phase="a"],.stage-heading[data-phase="b"]{
+ position:relative;isolation:isolate;overflow:hidden;
+ padding:clamp(22px,4vw,50px);border-radius:3px
+}
+.stage-heading[data-phase="a"]{background:var(--green-panel);color:var(--green)}
+.stage-heading[data-phase="b"]{background:var(--green);color:var(--sheet)}
+.stage-heading[data-phase="b"] p{color:var(--mint)}
+.stage-heading .chapter-mark{
+ position:absolute;z-index:-1;right:clamp(15px,5vw,70px);bottom:-.31em;
+ font:650 clamp(116px,20vw,280px)/1 var(--serif);opacity:.12;pointer-events:none
+}
+.stage-heading:is([data-phase="a"],[data-phase="b"]) h2{font-size:clamp(35px,5.1vw,64px)}
+#stage[data-phase="a"] .access-line,.step[aria-current=step]{border-color:var(--accent)}
+.follow-up{margin-top:clamp(28px,5vw,68px);padding-top:clamp(12px,2vw,24px);border-top:1px solid var(--line)}
+.follow-up .stage-heading{margin-top:0}
+.comparison-end{
+ padding:clamp(16px,4vw,44px);background:var(--green-panel);border:1px solid var(--line);border-radius:3px
+}
+.comparison-end .stage-heading{margin-bottom:16px;color:var(--green)}
+.comparison-end .stage-heading .eyebrow{
+ display:inline-block;margin:0 0 8px;padding:3px 8px;
+ background:var(--green);color:var(--sheet);border-radius:2px
+}
+.comparison-end .comparison{gap:12px}
+.comparison-end .comparison>div{padding:clamp(12px,2vw,24px);background:var(--paper)}
+.comparison-end .review-end{border-color:var(--accent)}
+.hearing-drawer{margin:0 0 clamp(12px,2.3vw,26px);border:1px solid var(--drawer-border);border-radius:3px;background:var(--drawer-paper)}
+.version-drawer{--drawer-head:#28594e;--drawer-hover:#316759;--drawer-ink:var(--sheet);--drawer-border:var(--mint);--drawer-paper:var(--green-wash)}
+.notice-drawer{--drawer-head:var(--green-wash);--drawer-hover:var(--green-panel);--drawer-ink:var(--green);--drawer-border:var(--line);--drawer-paper:var(--paper)}
+.hearing-drawer>summary{
+ min-height:48px;padding:clamp(12px,1.8vw,20px) clamp(14px,2.3vw,28px);
+ background:var(--drawer-head);color:var(--drawer-ink);font-weight:650
+}
+.hearing-drawer>summary:hover{background:var(--drawer-hover)}
+.hearing-drawer>summary .mono{margin:0 6px}
+.drawer-content{padding:clamp(14px,2.5vw,30px)}
+.version-drawer .record-card{margin:0;padding:clamp(12px,2.2vw,24px)}
+.version-drawer .date-pair{padding-block:14px}
+.version-drawer .date-pair time{font-size:clamp(20px,3.6vw,42px)}
+.record-moments,.notice-status{display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;margin:0;padding-top:12px;border-top:1px solid var(--line);font-size:13px}
+.record-moments dt,.notice-status dt{font-size:11px;font-weight:650;color:var(--muted)}
+.record-moments dd,.notice-status dd{margin:2px 0 0}
+.notice-text{margin:0 0 16px}
+.notice-text blockquote{margin:6px 0 0;font:600 clamp(18px,2.8vw,30px)/1.5 var(--serif)}
+.notice-status{border-color:var(--drawer-border)}
+.b-opinion{margin-top:clamp(18px,3vw,36px)}
+.turn-cue{color:var(--muted);font-size:11px}
+.desk-step{margin:14px 0;padding:clamp(12px,2vw,23px);border:1px solid var(--line);border-radius:3px;background:var(--green-wash)}
+.desk-step h3{font-size:14px}
+.desk-step h3 span{color:var(--muted);margin-right:6px}
+.desk-choices{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+.desk-choices button{min-height:36px;padding:5px 11px;border-color:var(--line);border-radius:3px;background:var(--sheet);font-size:13px}
+.desk-choices button:hover{background:var(--mint)}
+.desk-choices button[aria-pressed=true]{border-color:var(--green);background:var(--accent);color:#132b26;font-weight:650}
+.desk-preview{margin-top:8px}
+.desk-preview .voice{padding:7px 0 0}
+.desk-preview .listing-mock,.desk-preview .pack-evidence{width:min(100%,390px);margin:0}
+.desk-preview .listing-header{padding-bottom:4px;border-bottom:1px dashed var(--line);font-size:11px;color:var(--muted)}
+.desk-preview .listing-row{padding-top:4px;font-size:12px}
+.desk-preview .listing-useby{font:650 16px/1.45 var(--mono)}
+.desk-preview .pack-evidence{padding:8px 10px}
+.desk-preview .evidence-limit{margin-bottom:0}
+.desk-summary{margin-bottom:10px;background:var(--green-wash)}
+@media(max-width:580px){
+ .access-preview{margin-bottom:11px;padding:8px 10px}
+ .access-preview dl{grid-template-columns:1fr;gap:4px}
+ .access-preview dd,.access-preview>p{font-size:12px}
+ .case-beats li{padding:5px 6px;font-size:11px}
+ .hero-exhibits{width:min(100%,300px)}
+ .seat-card q{font-size:15px}
+ .seat-number,.seat-tick{font-size:9px}
+ .seat-confirm{align-items:flex-start;flex-wrap:wrap;padding:7px 9px;font-size:12px}
+ .record-moments,.notice-status{grid-template-columns:1fr;gap:7px}
+ .desk-step{padding:11px 10px}
+ .desk-choices button{font-size:12px;padding-inline:8px}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+.hearing{padding:0}
+.chapter{padding:clamp(32px,6vw,78px) 0}
+.case-nav{position:sticky;top:0;z-index:4;background:var(--paper);border-block:1px solid var(--line)}
+.case-nav-inner{display:grid;grid-template-columns:repeat(4,1fr);max-width:820px}
+.case-nav a{display:grid;place-items:center;min-height:48px;padding:4px;text-align:center;text-decoration:none;font-size:13px;font-weight:650}
+.case-nav a:hover,.case-nav a[aria-current=location]{background:var(--green-panel)}
+.case-nav a[aria-current=location]{box-shadow:inset 0 -3px var(--green)}
+.chapter-head,.timeline-intro{margin-bottom:clamp(18px,3vw,32px)}
+.chapter h2{font-size:clamp(35px,5.1vw,64px);line-height:1.18;margin:.16em 0}
+.chapter h2:focus-visible{outline:2px solid currentColor;outline-offset:5px;width:fit-content}
+.chapter-head>p:last-child,.timeline-intro>p:last-child{color:var(--muted)}
+.chapter-timeline{background:var(--paper)}
+.timeline-intro{padding-top:clamp(22px,4vw,48px)}
+.case-timeline{padding:clamp(14px,3vw,32px);background:var(--sheet);border:1px solid var(--line)}
+.case-timeline h3,.witnesses h3,.evidence-heading{font-size:clamp(17px,2.2vw,24px);font-family:var(--serif)}
+.timeline-nodes{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin:14px 0 16px}
+.timeline-nodes::before{content:"";position:absolute;inset:24px 10% auto;height:1px;background:var(--accent)}
+.timeline-nodes button{position:relative;display:grid;justify-items:center;gap:6px;background:none;padding:4px 0;font-size:12px}
+.timeline-nodes time{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;border:1px solid var(--accent);background:var(--green-wash);font:600 20px var(--mono)}
+.timeline-nodes button:hover time,.timeline-nodes button[aria-pressed=true] time{background:var(--green);color:var(--sheet)}
+.timeline-nodes button[aria-pressed=true] span{font-weight:750}
+.timeline-nodes button:focus-visible{outline:none}
+.timeline-nodes button:focus-visible time{outline:2px solid var(--green);outline-offset:3px}
+.case-timeline h3 small{margin-left:6px;color:var(--muted);font-size:11px;font-weight:500}
+.day-panel{display:grid;grid-template-columns:auto 1fr;align-items:start;gap:clamp(12px,3vw,30px);background:var(--green-wash);padding:clamp(10px,2.4vw,24px);min-height:120px}
+.day-panel>time{font:650 clamp(25px,6vw,62px)/1 var(--mono);color:var(--green)}
+.day-panel>time small{display:block;font:600 11px var(--mono);letter-spacing:.1em}
+.day-panel h4{font-size:16px;margin:0 0 4px}
+.day-panel p{font-size:13px}
+.day-panel button{margin-top:4px;min-height:34px}
+.chapter-next{margin:16px 0 0;font-size:13px}
+.chapter-a{background:var(--green-panel)}
+.chapter-a :is(.voices,.opinion-form textarea,.access-line){background:var(--sheet)}
+.witnesses{margin:18px 0 24px}
+.witnesses .voices{margin-top:10px}
+.exhibit-board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:start;margin:10px 0 20px}
+.exhibit-folder{border:1px solid #afbd9f;background:var(--paper);box-shadow:0 4px 0 #647c5b20}
+.exhibit-folder summary{position:relative;display:grid;grid-template-columns:1fr auto;align-items:end;gap:4px 8px;min-height:95px;padding:clamp(11px,2.5vw,26px);list-style:none;border-top:5px solid var(--accent)}
+.exhibit-folder summary::-webkit-details-marker{display:none}
+.exhibit-folder.package summary{border-color:#476749}
+.exhibit-folder summary:hover{background:var(--green-wash)}
+.exhibit-folder summary .eyebrow{grid-column:1/-1;margin:0;color:var(--muted)}
+.exhibit-folder summary strong{font:650 clamp(18px,2.5vw,28px)/1.25 var(--serif)}
+.folder-action{font-size:11px;color:var(--green);white-space:nowrap}
+.folder-action::after{content:" ↓"}
+.exhibit-folder[open] .folder-action::after{content:" ↑"}
+.exhibit-content{border-top:1px dashed var(--line);padding:clamp(10px,2vw,20px)}
+.exhibit-content .pack-evidence{position:relative;margin:0;isolation:isolate;overflow:hidden;background:#d3deca}
+.exhibit-content .pack-evidence svg{position:absolute;z-index:-1;top:7px;right:6%;width:60%;transform:rotate(-11deg);filter:drop-shadow(2px 4px 5px #20362c42)}
+.exhibit-content .pack-evidence .label{width:fit-content;margin:24px 0 3px;box-shadow:2px 3px 7px #20362c33;transform:rotate(-2deg)}
+.exhibit-content .listing-useby mark{background:#d6e9b5;color:var(--ink)}
+.exhibit-content .photo-label{background:#e9efe1;padding:1px 3px}
+.exhibit-content .listing-useby{margin:8px 0 3px;font:650 16px var(--mono)}
+.exhibit-content .evidence-limit{margin-bottom:0}
+.chapter-b{background:var(--green);color:var(--sheet)}
+.chapter-b :is(.chapter-head p,.chapter-next a,.material-tools>summary){color:#dce9de}
+.chapter-b .access-line{background:#24564c;border-color:#9cbcaa;color:var(--sheet)}
+.chapter-b .drawer-content,.chapter-b .voices{color:var(--ink)}
+.chapter-b .version-drawer{--drawer-head:#2b6457;--drawer-hover:#387568;--drawer-border:#91ad9f}
+.chapter-b .notice-drawer{--drawer-border:#b4c7ad}
+.chapter-b .b-opinion :is(.footnote,.previous-note,.link-button){color:#dce9de}
+.chapter-b .b-opinion textarea{background:var(--sheet);color:var(--ink)}
+.chapter-b .material-grid button{color:var(--ink)}
+.chapter-b .primary{background:var(--green-panel);color:var(--green);border-color:var(--green-panel)}
+.chapter-b .primary:hover{background:var(--sheet)}
+.chapter-b :is(button,summary,textarea,a):focus-visible{outline-color:#c1dfc4}
+.chapter-b .voices[hidden]{display:none}
+.chapter :is(a.primary,.actions a.link-button){display:inline-flex;align-items:center;text-decoration:none;min-height:42px}
+.chapter .actions a.link-button{text-decoration:underline}
+.chapter .material-tools{margin-top:18px}
+.chapter-end{background:var(--paper)}
+.chapter-end .comparison-end{margin-block:0}
+@media(max-width:580px){
+ .case-nav a{font-size:11px;min-height:43px}
+ .exhibit-board{grid-template-columns:1fr}
+ .exhibit-folder summary{min-height:76px}
+ .timeline-nodes time{width:36px;height:36px;font-size:17px}
+ .timeline-nodes::before{top:21px}
+ .day-panel{min-height:110px}
+}
+
+
+/* Chapter rail and inset reading column. */
+body{background:var(--paper);line-height:1.85}
+.wrap{width:min(1160px,calc(100% - 80px))}
+.site-head{border-bottom:0}
+.topbar{min-height:88px;border-bottom:1px solid var(--line)}
+.primary,.secondary{padding:12px 22px;font-size:13px;min-height:46px}
+.entry{padding:54px 0 60px}
+.hero{
+ min-height:440px;gap:64px;padding:42px 48px;margin-bottom:34px;
+ border:0;background:#e4e9da;border-radius:0
+}
+.hero h1{font-size:clamp(64px,7.3vw,100px);font-weight:600;line-height:1.2}
+.hero-copy>p:last-child{margin-top:25px;font-size:14px;line-height:1.95;max-width:420px}
+.hero-exhibits{width:min(100%,430px)}
+.access-preview{padding:18px 0 22px;margin-bottom:30px;border:0;border-block:1px solid var(--line);border-radius:0;background:transparent}
+.access-preview>p{font-size:12px}
+.access-preview dl{margin-top:13px;gap:14px 36px}
+.access-preview dl div{gap:12px}
+.access-preview dd{font-size:12px;line-height:1.85;max-width:440px}
+.entry-roles{padding-top:0;border-top:0}
+.roles-heading{margin-bottom:20px}
+.roles-heading h3{font-family:var(--serif);font-size:25px;font-weight:600}
+.role-grid{gap:18px}
+.seat-card{padding:24px 22px;gap:13px;min-height:218px;border-radius:0}
+.seat-card .seat-name{font-size:24px;font-weight:500;line-height:1.35}
+.seat-card .seat-kind{font-size:11px}
+.seat-card q{font-size:19px;line-height:1.6;font-weight:500}
+.seat-confirm{margin-top:23px;padding:16px 0;background:transparent;border-bottom:1px solid var(--line);gap:20px}
+.entry-foot{gap:18px;margin-top:22px;font-size:11px}
+.case-nav-inner{display:flex;align-items:center;max-width:1160px;gap:32px;min-height:62px}
+.case-nav a{position:relative;display:flex;justify-content:center;min-height:62px;padding:0 2px;font-size:12px;font-weight:500}
+.case-nav a:hover,.case-nav a[aria-current=location]{background:transparent}
+.case-nav a[aria-current=location]{box-shadow:inset 0 -3px var(--green);font-weight:700}
+.chapter{padding:88px 0 96px}
+.chapter-head,.timeline-intro,#comparison-heading{
+ display:grid;grid-template-columns:150px minmax(0,1fr);column-gap:30px;row-gap:10px;
+ margin:0 0 38px;padding:0
+}
+.chapter :is(.chapter-head,.timeline-intro,#comparison-heading)>.eyebrow{
+ grid-column:1;grid-row:1/3;margin:0;padding-top:8px;
+ background:none;color:var(--muted);font-size:10px;letter-spacing:.05em;border-radius:0
+}
+.chapter :is(.chapter-head,.timeline-intro,#comparison-heading)>.eyebrow strong{
+ display:block;margin-top:6px;color:var(--green);font:600 12px var(--sans);letter-spacing:.12em
+}
+.chapter h2{
+ font-size:clamp(32px,3vw,40px);font-weight:600;line-height:1.45;
+ letter-spacing:-.03em;margin:0;max-width:760px
+}
+.chapter :is(.chapter-head,.timeline-intro,#comparison-heading)>h2{grid-column:2;grid-row:1}
+.chapter :is(.chapter-head,.timeline-intro)>p:last-child{grid-column:2;grid-row:2;font-size:13px;margin:0;line-height:1.9;max-width:700px}
+.chapter-body{margin-left:180px;min-width:0}
+.seat-strip{padding-bottom:22px;margin-bottom:48px}
+.seat-current{gap:14px}
+.seat-initials{width:42px;height:42px;font-size:17px}
+.seat-current b{font-size:23px;font-weight:500}
+.seat-current small{margin-top:3px}
+.chapter-timeline{background:var(--paper)}
+.case-timeline{padding:0;border:0;background:none}
+.case-timeline h3{font-size:18px;font-weight:500}
+.timeline-nodes{margin:30px 0 32px}
+.timeline-nodes button{gap:14px}
+.day-panel{
+ gap:32px;padding:28px 0 30px;min-height:168px;border-block:1px solid var(--line);
+ background:transparent
+}
+.day-panel>time{font-size:64px;line-height:1.12;font-weight:500}
+.day-panel>time small{margin-top:4px;font-size:10px;font-weight:500}
+.day-panel h4{font-size:18px;font-family:var(--serif);font-weight:600;margin:0 0 9px}
+.day-panel p{font-size:14px;line-height:1.95;max-width:640px}
+.day-panel button{margin-top:12px;font-size:12px}
+.chapter-next{margin:28px 0 0;font-size:12px}
+.chapter-a{background:#e9edde}
+.access-line{margin:0 0 32px;padding:12px 0 12px 17px;font-size:12px;line-height:1.9}
+.chapter-a article .access-line{background:transparent;border-color:#819d85}
+.witnesses{margin:0 0 42px}
+.witnesses h3,.evidence-heading{font-size:21px;font-weight:500}
+.desk-choices{gap:10px;margin-top:15px}
+.desk-choices button{padding:7px 16px;min-height:40px;font-size:12px;border-radius:2px}
+.chapter-a article .voices,.chapter-b .voices{
+ margin-top:20px;padding:0;border:0;border-block:1px solid var(--line);border-radius:0;background:transparent
+}
+.voice{grid-template-columns:80px minmax(0,1fr);gap:20px;padding:23px 0}
+.voice b{font-size:14px;font-weight:500;color:var(--muted)}
+.voice q{font:500 20px/1.75 var(--serif)}
+.voice.own-voice q{font-weight:500}
+.turn-cue{display:block;margin-bottom:4px;font:10px/1.5 var(--sans)}
+.exhibit-board{margin:20px 0 36px;gap:24px}
+.exhibit-folder{box-shadow:none;border-color:#c0cab4;border-radius:0;background:var(--sheet)}
+.exhibit-folder summary{min-height:126px;padding:24px 26px;border-top-width:3px;gap:9px 12px}
+.exhibit-folder summary strong{font-size:25px;font-weight:500}
+.exhibit-folder summary .eyebrow{font-size:9px}
+.exhibit-folder summary:hover{background:#f0f3e8}
+.exhibit-content{padding:24px 22px}
+.exhibit-content .listing-mock{padding:17px 16px;background:#fbfaf5}
+.exhibit-content .listing-header{font-size:10px;padding-bottom:12px}
+.exhibit-content .listing-row{padding-top:12px}
+.exhibit-content .listing-useby{margin:17px 0 8px;font-size:17px}
+.exhibit-content .evidence-limit{font-size:11px;margin-top:13px;line-height:1.8}
+.desk-summary{margin:0 0 28px;padding:18px 22px;border:0;border-left:2px solid var(--accent);border-radius:0;background:#f2f5e9}
+.desk-summary .eyebrow{margin-bottom:7px;font-size:9px}
+.desk-summary p{font-size:13px;line-height:1.9}
+.opinion-form{margin-top:32px;padding-top:0;border:0}
+.opinion-head{margin-bottom:12px;gap:12px}
+.opinion-head label{font-size:13px;font-weight:500}
+.opinion-head button{font-size:11px}
+.opinion-form textarea{min-height:96px;padding:15px 17px;font-size:14px;line-height:1.85;border-radius:0}
+.actions{margin-top:24px;gap:20px}
+.actions .link-button{font-size:12px}
+.chapter .material-tools{margin-top:36px;padding-top:16px}
+.material-tools summary{font-size:12px;font-weight:500}
+.material-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}
+.material-grid button{min-height:41px;padding:8px 11px}
+.chapter-b :is(.chapter-head,.timeline-intro,#comparison-heading)>.eyebrow{color:#b6cbbc}
+.chapter-b :is(.chapter-head,.timeline-intro,#comparison-heading)>.eyebrow strong{color:#c8dfb3}
+.chapter-b .access-line{background:transparent}
+.chapter-b .voices{color:var(--sheet);border-color:#6f8d7b}
+.chapter-b .voice b,.chapter-b .turn-cue{color:#c9dbce}
+.hearing-drawer{margin-bottom:32px;border-radius:0}
+.hearing-drawer>summary{min-height:66px;padding:19px 26px;font-size:14px;font-weight:500}
+.drawer-content{padding:30px}
+.version-drawer .record-card{padding:26px;border:0;border-radius:0}
+.version-drawer .record-card h3{font-size:13px;font-weight:500}
+.version-drawer .date-pair{padding-block:24px}
+.version-drawer .date-pair time{font-size:clamp(24px,3vw,36px)}
+.record-moments,.notice-status{padding-top:18px;gap:18px 24px;font-size:13px;line-height:1.85}
+.record-moments dt,.notice-status dt{font-size:10px;font-weight:500}
+.notice-text{margin-bottom:26px}
+.notice-text .eyebrow{font-size:9px;line-height:1.8}
+.notice-text blockquote{margin-top:14px;font-size:25px;font-weight:500;line-height:1.65;max-width:640px}
+.b-opinion{margin-top:40px}
+.previous-note{margin:22px 0 28px;line-height:1.9}
+.chapter-end{background:var(--paper)}
+.chapter-end .comparison-end{padding:0;border:0;border-radius:0;background:transparent}
+.comparison-end .comparison{gap:24px;margin-top:22px}
+.comparison-end .comparison>div{padding:25px 28px;background:var(--sheet);min-height:140px;border-radius:0}
+.comparison h3{margin-bottom:14px;font:500 20px/1.5 var(--serif)}
+.comparison p{font-size:14px;line-height:1.85}
+.comparison-end .review-end{margin-top:32px;padding:21px 25px}
+.review-end h3{font-size:17px;font-weight:500}
+.review-end p{margin-top:9px;line-height:1.9}
+.site-foot{padding-block:28px;font-size:11px}
+@media(max-width:1060px){
+ .wrap{width:calc(100% - 50px)}
+ .chapter-head,.timeline-intro,#comparison-heading{grid-template-columns:110px minmax(0,1fr);column-gap:22px}
+ .chapter-body{margin-left:132px}
+ .hero{gap:32px;padding:34px 30px;min-height:390px}
+ .role-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .seat-card{min-height:180px}
+ .exhibit-folder summary{padding:22px 18px}
+ .exhibit-content{padding:19px 16px}
+}
+@media(max-width:800px){
+ .wrap{width:calc(100% - 40px)}
+ .chapter{padding:58px 0 64px}
+ .chapter-head,.timeline-intro,#comparison-heading{display:block;margin-bottom:28px}
+ .chapter :is(.chapter-head,.timeline-intro,#comparison-heading)>.eyebrow{padding:0;margin:0 0 14px}
+ .chapter :is(.chapter-head,.timeline-intro,#comparison-heading)>.eyebrow strong{display:inline;margin-left:10px}
+ .chapter h2{font-size:32px}
+ .chapter :is(.chapter-head,.timeline-intro)>p:last-child{margin-top:12px;font-size:12px}
+ .chapter-body{margin-left:0}
+ .case-nav-inner{gap:24px;min-height:52px}
+ .case-nav a{min-height:52px;font-size:11px}
+ .hero{min-height:0;gap:20px}
+ .hero h1{font-size:64px}
+ .seat-strip{margin-bottom:32px}
+ .voice{grid-template-columns:62px minmax(0,1fr);gap:14px}
+ .voice q{font-size:18px}
+ .exhibit-folder summary strong{font-size:22px}
+}
+@media(max-width:540px){
+ .wrap{width:calc(100% - 36px)}
+ .topbar{min-height:73px}
+ .head-right{gap:10px}
+ .head-right .link-button{font-size:11px}
+ .entry{padding:28px 0 38px}
+ .hero{grid-template-columns:1fr;padding:28px 23px;gap:16px;margin-bottom:26px}
+ .hero h1{font-size:61px}
+ .hero-copy>p:last-child{font-size:13px;margin-top:18px}
+ .hero-exhibits{width:min(100%,310px)}
+ .access-preview{padding-block:16px;margin-bottom:26px}
+ .access-preview dl{grid-template-columns:1fr;gap:12px}
+ .roles-heading h3{font-size:23px}
+ .role-grid{grid-template-columns:1fr;gap:13px}
+ .seat-card{display:grid;grid-template-columns:1fr auto;align-items:baseline;min-height:0;padding:20px;gap:11px 15px}
+ .seat-card-top,.seat-card q{grid-column:1/-1}
+ .seat-card .seat-name{font-size:24px}
+ .seat-card q{font-size:18px}
+ .seat-card .seat-kind{font-size:11px}
+ .seat-confirm{padding-block:14px;font-size:12px}
+ .chapter{padding:48px 0 54px}
+ .chapter h2{font-size:29px}
+ .case-nav-inner{justify-content:space-between;gap:8px}
+ .case-nav a{font-size:10px;min-height:49px}
+ .seat-current b{font-size:21px}
+ .seat-strip{gap:10px}
+ .seat-strip .link-button{font-size:11px}
+ .day-panel{gap:19px;padding-block:22px;min-height:166px}
+ .day-panel>time{font-size:46px}
+ .day-panel h4{font-size:16px}
+ .day-panel p{font-size:13px}
+ .timeline-nodes{margin-block:25px}
+ .witnesses{margin-bottom:34px}
+ .voice{grid-template-columns:51px minmax(0,1fr);padding-block:19px;gap:12px}
+ .voice q{font-size:16px;line-height:1.8}
+ .voice b{font-size:13px}
+ .exhibit-board{grid-template-columns:1fr;gap:20px;margin-bottom:28px}
+ .exhibit-folder summary{padding:20px;min-height:105px}
+ .exhibit-content{padding:20px}
+ .exhibit-content .listing-header{flex-wrap:wrap;gap:5px}
+ .exhibit-content .pack-evidence .label{font-size:10px;padding:9px}
+ .desk-summary{padding:16px 18px}
+ .opinion-head{gap:8px}
+ .opinion-form textarea{min-height:106px;font-size:14px}
+ .actions{gap:16px;margin-top:23px}
+ .material-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .hearing-drawer>summary{padding:17px 18px;min-height:61px;font-size:13px}
+ .drawer-content{padding:18px}
+ .version-drawer .record-card{padding:18px 14px}
+ .version-drawer .date-pair{gap:8px;grid-template-columns:minmax(0,1fr) 18px minmax(0,1fr)}
+ .version-drawer .date-pair time{font-size:22px}
+ .record-moments,.notice-status{grid-template-columns:1fr;gap:15px}
+ .notice-text blockquote{font-size:21px;line-height:1.7}
+ .comparison-end .comparison{grid-template-columns:1fr;gap:18px}
+ .comparison-end .comparison>div{padding:22px;min-height:115px}
+ .comparison-end .review-end{padding:18px}
+}
+
+
+/* Cover and role prologue. */
+body{-webkit-font-smoothing:antialiased}
+::selection{background:var(--lime);color:var(--green)}
+a{color:inherit}
+.topbar{height:88px;padding:0}
+.brand{text-decoration:none}
+.brand-name{font-family:var(--sans);font-size:26px;letter-spacing:-.05em;font-weight:600;line-height:1.1}
+.brand small{display:block;margin-top:4px;font:8px var(--sans);letter-spacing:.18em}
+.top-actions{display:flex;align-items:center;gap:26px}
+.top-actions .mono{font-size:11px;color:var(--muted)}
+.top-actions button{background:none;padding:4px 0;font-size:13px}
+.archive-cover{padding:61px 0 0;overflow:hidden}
+.hero-meta{display:flex;gap:13px;align-items:center;color:var(--muted)}
+.hero-meta .dot{width:6px;height:6px;margin:0;background:var(--orange)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;min-height:475px}
+.archive-cover h1{font-family:var(--serif);font-size:clamp(65px,7.3vw,100px);line-height:1.19;font-weight:600;letter-spacing:-.055em;margin:20px 0 25px}
+.archive-cover h1 em{font-style:normal;position:relative;z-index:0}
+.archive-cover h1 em::after{content:"";position:absolute;left:0;right:-5px;bottom:9px;height:17px;background:var(--lime);z-index:-1;transform:rotate(-2deg)}
+.archive-cover .hero-copy{max-width:430px;font-size:15px;line-height:1.95;color:#526357;margin:0 0 26px}
+.hero-cta{display:flex;align-items:center;gap:20px}
+.hero-cta small{font-size:11px;line-height:1.8;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:20px;padding:13px 23px;min-height:48px;background:var(--green);color:var(--sheet);border:1px solid var(--green);border-radius:3px;font-weight:600;text-decoration:none;transition:transform .2s,background .2s}
+.btn:hover{background:#285343;transform:translateY(-2px)}
+.cover{height:445px;position:relative;isolation:isolate}
+.cover::before{content:"";position:absolute;inset:17px 25px 10px;background:radial-gradient(ellipse,#dce3ca 0,transparent 69%);z-index:-1}
+.cover-grid{position:absolute;inset:30px 0;background-image:linear-gradient(#dce1d750 1px,transparent 1px),linear-gradient(90deg,#dce1d750 1px,transparent 1px);background-size:25px 25px;mask-image:radial-gradient(ellipse,#000,transparent 72%)}
+.meal-pack{position:absolute;width:345px;height:238px;left:70px;top:81px;transform:rotate(-9deg);filter:drop-shadow(9px 18px 15px #24372c24)}
+.meal-svg{width:100%;height:100%}
+.package-label{position:absolute;left:26px;top:110px;width:190px;background:#f8f4e6;border:1px solid #bcc5b1;padding:12px 13px;color:#203b2d;font-size:10px;line-height:1.4}
+.package-label strong{display:block;letter-spacing:.09em;font-size:14px;white-space:nowrap;border-top:1px solid #87927d;margin-top:6px;padding-top:6px}
+.pack-mini{display:flex;justify-content:space-between;margin-top:8px;font-family:var(--mono);font-size:8px}
+.receipt{position:absolute;width:218px;left:264px;top:196px;background:var(--white);padding:18px 20px 22px;transform:rotate(8deg);box-shadow:2px 9px 28px #233a311b;border-top:5px solid var(--green)}
+.receipt::after{content:"";position:absolute;bottom:-6px;height:8px;left:0;right:0;background:linear-gradient(135deg,var(--white) 25%,transparent 25%) -4px 0/12px 12px,linear-gradient(225deg,var(--white) 25%,transparent 25%) -4px 0/12px 12px}
+.receipt-head{display:flex;justify-content:space-between;font-size:10px;border-bottom:1px dashed #b9c5b4;padding-bottom:9px;margin-bottom:12px}
+.receipt-title{font-weight:600;font-size:14px}
+.receipt-date{font-family:var(--mono);font-size:29px;letter-spacing:-1px;margin:7px 0}
+.receipt .mark{background:var(--lime);padding:1px 7px}
+.receipt small{display:block;font-size:9px;line-height:1.6;color:var(--muted)}
+.cover-tag{position:absolute;left:38px;top:19px;font-size:11px;display:flex;align-items:center;gap:9px}
+.cover-tag::after{content:"";width:48px;border-top:1px solid #a3b09e}
+.stamp{position:absolute;top:337px;left:75px;border:2px solid #b26443;color:#a45b3c;padding:4px 13px;font-size:14px;font-weight:700;letter-spacing:.15em;transform:rotate(-8deg);opacity:.9}
+.cover-note{position:absolute;top:375px;right:9px;max-width:165px;font-size:10px;color:var(--muted);line-height:1.7}
+.hero-foot{display:flex;justify-content:space-between;gap:25px;align-items:center;padding:25px 0 28px;border-top:1px solid var(--line);margin-top:30px;font-size:11px}
+.hero-foot .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-size:11px;line-height:1.7}
+.hero-foot .dot{width:6px;height:6px;margin:0;background:currentColor}
+.hero-foot span:last-child{color:var(--muted)}
+.hero-foot b{font-weight:600}
+.seat-card{min-height:294px}
+.seat-identity{display:flex;gap:12px;align-items:center}
+.avatar{display:flex;align-items:center;justify-content:center;flex:none;width:43px;height:43px;border-radius:50%;background:var(--green-wash);color:var(--green);font:19px var(--serif)}
+.seat-identity .seat-name{display:block;font-size:23px}
+.seat-identity .seat-kind{display:block;margin-top:4px}
+.seat-task{display:block;padding-top:13px;border-top:1px solid var(--line);font-size:11px;line-height:1.9}
+.seat-task small{display:block;font-size:9px;margin-bottom:3px}
+.seat-choice:checked+.seat-card .seat-task{border-color:#78917a}
+.seat-choice:checked+.seat-card .seat-kind{color:#d9e7c8}
+.seat-choice:checked+.seat-card .avatar{background:var(--lime)}
+.seat-prologue{padding:43px 0 45px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:230px minmax(0,1fr);gap:50px;scroll-margin-top:20px}
+.prologue-badge{border:1px solid #bdcaaa;padding:19px;background:#e9eddf;align-self:start;position:relative}
+.prologue-badge::before{content:"";display:block;width:24px;height:4px;background:#adc18d;margin:-21px auto 18px}
+.prologue-badge .avatar{width:53px;height:53px;font-size:22px;margin-bottom:14px;background:var(--green);color:var(--lime)}
+.prologue-badge strong{font-family:var(--serif);font-size:25px;font-weight:500;display:block;line-height:1.6}
+.prologue-badge small{font-size:11px;color:var(--muted)}
+.prologue-badge p{font-size:11px;line-height:1.9;margin:16px 0 0;border-top:1px solid #c1cdb0;padding-top:13px}
+.prologue-scene h2{font-family:var(--serif);font-size:32px;line-height:1.55;font-weight:500;margin:11px 0 17px}
+.prologue-scene p{font-size:13px;line-height:2;color:#53664b;max-width:690px;margin:0 0 14px}
+.prologue-scene .eyebrow{color:#788b65;font-size:10px}
+.prologue-mission{border-left:3px solid var(--orange);padding-left:15px;margin:19px 0;font-size:12px}
+.prologue-bottom{display:flex;gap:18px;align-items:center;margin-top:24px}
+.prologue-bottom a{text-decoration:none}
+.prologue-bottom small{font-size:10px;color:var(--muted)}
+.chapter h2{font-family:var(--serif);font-weight:600;line-height:1.4}
+.voice q{font:400 13px/1.9 var(--sans)}
+.voice.own-voice q{font-weight:400}
+.witnesses .voice q{font-family:var(--serif);font-size:22px;line-height:1.7}
+.voice b{font:400 11px/1.9 var(--sans)}
+.turn-cue{font-size:10px;font-weight:400}
+.mini-hearing{margin-top:22px;padding-top:17px;border-top:1px solid var(--line);color:var(--ink)}
+.hearing-cue{display:grid;grid-template-columns:67px minmax(0,1fr);gap:12px;font-size:12px;line-height:1.9}
+.hearing-cue>span{font-size:10px;color:var(--muted)}
+.response-button{display:inline-flex;align-items:center;min-height:38px;margin:10px 0 0 79px;padding:3px 0;background:none;border-bottom:1px solid var(--accent);font-size:12px;color:var(--green)}
+.response-button:hover{border-color:var(--green)}
+.hearing-reply .voice{grid-template-columns:67px minmax(0,1fr);gap:12px;padding:16px 0 0}
+.hearing-reply .voice.own-voice{border-left:2px solid #9bb76e;padding-left:10px}
+.hearing-reply .voice b{color:var(--green)}
+.hearing-reply .turn-cue{color:var(--muted)}
+.chapter-b .mini-hearing{border-top-color:#bac9b1;color:var(--ink)}
+.chapter-b .hearing-reply .voice b{color:var(--green)}
+.chapter-b .hearing-reply .turn-cue{color:var(--muted)}
+.chapter-b .response-button:focus-visible{outline-color:var(--green)}
+.opinion-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.opinion-paper{background:var(--white);border:1px solid var(--line);padding:26px 27px 20px;position:relative;box-shadow:2px 4px 0 #dce2d260}
+.opinion-paper .opinion-id{font-family:var(--mono);font-size:10px;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:19px;display:flex;justify-content:space-between;gap:10px}
+.opinion-paper h3{font-family:var(--serif);font-size:24px;line-height:1.6;font-weight:500;margin:0 0 18px}
+.opinion-paper p{font-size:12px;color:#526357;line-height:1.95;margin:0 0 16px}
+.opinion-paper strong{font-weight:600;color:var(--green)}
+.opinion-paper .verdict-label{font-size:10px;color:#567446;background:#e8efdb;padding:4px 9px;display:inline-block}
+.shared-unknown{display:flex;gap:20px;align-items:flex-start;font-size:11px;padding:18px 0;border-bottom:1px solid var(--line);color:var(--muted);margin-top:15px}
+.shared-unknown b{color:var(--green);font-weight:600;white-space:nowrap}
+.my-comparison{margin-top:38px}
+.my-comparison>h3{font:500 24px/1.6 var(--serif);margin-bottom:10px}
+.chapter-analysis{background:#e7ecdc;border-top:1px solid #d3dcca}
+.analysis-tabs{display:flex;gap:12px;margin-bottom:26px}
+.analysis-tabs button{padding:9px 16px;background:none;border:1px solid #b7c5aa;font-size:12px;border-radius:2px}
+.analysis-tabs button[aria-selected=true]{background:var(--green);color:var(--white);border-color:var(--green)}
+.analysis-canvas{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.analysis-side{padding:20px 0;border-top:1px solid #b9c6ad}
+.analysis-side .eyebrow{font-size:10px;color:#6b7e5e}
+.analysis-side h3{font-family:var(--serif);font-size:23px;font-weight:500;margin:10px 0 16px;line-height:1.5}
+.analysis-side p{font-size:12px;line-height:1.95;color:#526448;margin:0}
+.task-flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 18px}
+.task-flow span{font-size:10px;padding:4px 8px;border:1px solid #c1cdb0;background:#f1f4e9}
+.task-flow i{font-style:normal;font-size:12px;color:#657958}
+.analysis-takeaway{border-top:1px solid #b9c6ad;padding-top:18px;font-size:12px;margin-top:10px;color:#526448;line-height:1.9}
+.analysis-takeaway small{display:block;margin-top:10px;font-family:var(--mono);font-size:9px}
+.method-details{margin-top:24px}
+.method-details button{font-size:12px}
+.mobile-break{display:none}
+.closing{background:var(--green);color:var(--white);padding:52px 0}
+.closing-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.closing h2{font-family:var(--serif);font-size:31px;font-weight:500;margin:0 0 12px;line-height:1.7}
+.closing p{font-size:11px;color:#b7c8ab;margin:0}
+.closing .text-btn{display:inline-block;color:var(--lime);white-space:nowrap;font-size:12px}
+@media(min-width:1400px){
+ .hero-grid{min-height:490px}
+ .archive-cover h1{font-size:105px}
+}
+@media(max-width:1060px){
+ .cover{transform:scale(.9);transform-origin:center}
+ .archive-cover h1{font-size:82px}
+ .top-actions{gap:20px}
+ .seat-prologue{grid-template-columns:190px minmax(0,1fr);gap:30px}
+ .prologue-badge strong{font-size:23px}
+ .opinion-paper{padding:22px}
+}
+@media(min-width:801px) and (max-width:1000px){
+ .hero-grid{grid-template-columns:1fr}
+ .archive-cover .hero-copy{max-width:600px}
+ .cover{width:510px;max-width:100%;margin:auto}
+}
+@media(max-width:800px){
+ .topbar{height:73px}
+ .top-actions .top-case{display:none}
+ .archive-cover{padding-top:38px}
+ .hero-grid{grid-template-columns:1fr;gap:0}
+ .archive-cover h1{font-size:82px;margin-top:25px}
+ .archive-cover .hero-copy{max-width:none}
+ .hero-cta{margin-bottom:15px}
+ .cover{width:510px;max-width:100%;height:420px;margin:auto;transform:scale(.93);transform-origin:top center}
+ .hero-foot{margin-top:0;align-items:flex-start}
+ .hero-foot span:last-child{max-width:270px}
+ .hero-meta{flex-wrap:wrap;gap:9px}
+ .hero-meta .mono{font-size:10px}
+ .seat-identity{align-items:flex-start;flex-direction:column}
+ .seat-prologue{padding-top:30px;padding-bottom:35px;grid-template-columns:170px minmax(0,1fr);gap:25px}
+ .prologue-badge{padding:16px}
+ .prologue-badge strong{font-size:21px}
+ .prologue-badge small{font-size:10px}
+ .prologue-scene h2{font-size:29px}
+ .prologue-scene p{font-size:12px}
+ .closing h2{font-size:27px}
+ .closing-inner{align-items:flex-start}
+}
+@media(max-width:540px){
+ .brand-name{font-size:20px}
+ .brand-mark{width:29px}
+ .brand small{font-size:7px}
+ .top-actions{gap:11px}
+ .top-actions button{font-size:10px}
+ .archive-cover h1{font-size:73px}
+ .archive-cover .hero-copy{font-size:13px}
+ .hero-cta{gap:15px}
+ .hero-cta .btn{padding:12px 18px;font-size:13px}
+ .hero-cta small{font-size:10px}
+ .cover{width:340px;height:315px;transform:none;margin-top:16px}
+ .cover-tag{left:6px;top:15px;font-size:9px}
+ .meal-pack{width:258px;height:177px;left:16px;top:60px}
+ .package-label{width:155px;left:22px;top:83px;padding:8px 10px}
+ .package-label strong{font-size:12px}
+ .package-label>div:nth-child(2){font-size:10px!important}
+ .pack-mini{font-size:6px}
+ .receipt{width:161px;left:175px;top:145px;padding:13px 13px 17px}
+ .receipt-title{font-size:11px}
+ .receipt-date{font-size:23px}
+ .receipt-head{font-size:8px;margin-bottom:7px;padding-bottom:5px}
+ .receipt small{font-size:7px}
+ .receipt>div:nth-child(4){font-size:8px!important;margin-bottom:8px!important}
+ .receipt-date span{font-size:11px!important}
+ .stamp{font-size:11px;left:20px;top:251px;padding:3px 9px}
+ .cover-note{top:276px;right:12px;font-size:8px;max-width:135px}
+ .hero-foot{display:block;padding:17px 0 22px;font-size:10px}
+ .hero-foot span:last-child{display:block;max-width:none;margin-top:12px}
+ .hero-foot .pill{font-size:10px}
+ .seat-card{min-height:0}
+ .seat-card .seat-identity,.seat-task{grid-column:1/-1}
+ .seat-identity{flex-direction:row;align-items:center}
+ .seat-prologue{display:block;padding-top:24px}
+ .prologue-badge{display:grid;grid-template-columns:43px minmax(0,1fr);gap:3px 12px;margin-bottom:25px;padding:15px 17px}
+ .prologue-badge::before{display:none}
+ .prologue-badge .avatar{grid-row:1/3;width:40px;height:40px;font-size:18px;margin:0}
+ .prologue-badge strong{font-size:23px;line-height:1.2}
+ .prologue-badge small{font-size:10px}
+ .prologue-badge p{grid-column:1/-1;font-size:11px;margin-top:13px;padding-top:10px}
+ .prologue-bottom{flex-wrap:wrap;gap:10px}
+ .prologue-bottom .primary{min-height:41px;font-size:12px}
+ .prologue-bottom small{font-size:9px}
+ .case-nav-inner{gap:4px}
+ .case-nav a{font-size:10px;padding-inline:0}
+ .witnesses .voice q{font-size:19px}
+ .mini-hearing{margin-top:20px}
+ .hearing-cue{grid-template-columns:1fr;gap:4px}
+ .response-button{margin-left:0}
+ .hearing-reply .voice{grid-template-columns:48px minmax(0,1fr);gap:12px}
+ .mobile-break{display:block}
+ .opinion-grid{grid-template-columns:1fr;gap:21px}
+ .opinion-paper{padding:24px}
+ .opinion-paper h3{font-size:25px}
+ .shared-unknown{display:block}
+ .shared-unknown b{display:block;margin-bottom:8px}
+ .analysis-tabs{gap:7px}
+ .analysis-tabs button{font-size:11px;padding:8px 11px}
+ .analysis-canvas{grid-template-columns:1fr;gap:5px}
+ .analysis-side{padding:18px 0}
+ .analysis-side h3{font-size:24px}
+ .closing-inner{display:block}
+ .closing h2{font-size:26px}
+ .closing .text-btn{margin-top:23px}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+
+
+/* B5: compact evidence provenance and responsive research notes. */
+.access-preview>.comparison-purpose{margin-top:18px;padding-top:14px;border-top:1px dashed var(--line);max-width:900px;font-size:12px;line-height:1.9}
+.b-purpose{margin:0 0 30px;padding:18px 20px;border-left:2px solid #bad39f;background:#244c3d;color:var(--sheet)}
+.b-purpose h3{font:500 21px/1.5 var(--serif);margin-bottom:10px}.b-purpose p{font-size:13px;line-height:1.9}.b-purpose .footnote{font-size:12px;color:#dce9de}
+.shared-unknown>div{min-width:0}.shared-unknown strong{font-weight:650;color:var(--green)}
+@media(max-width:540px){.b-purpose{padding:16px}.b-purpose h3{font-size:19px}.b-purpose p{font-size:12px}}
+.roles-heading h2{font-size:25px;line-height:1.45}.seat-boundary{font-size:11px;color:#526357;margin:-7px 0 20px;max-width:790px}
+.fact-notes,.research-notes{border-block:1px solid var(--line);padding:15px 0;margin-top:24px;font-size:13px}
+.fact-notes>summary,.research-notes>summary{font-weight:650;font-size:13px}
+.fact-groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:18px}
+.fact-groups h4{font-size:13px}.fact-groups ul{padding-left:18px;font-size:12px;margin:10px 0}
+.research-notes h3,.dialog-body .research-section h3{margin:22px 0 10px;font:600 21px/1.4 var(--serif)}
+.research-section{margin-top:18px}.research-section p,.research-section li{font-size:13px;line-height:1.9}
+.source-table-wrap{overflow:auto;margin-top:15px;max-width:100%}.source-table{border-collapse:collapse;width:100%;min-width:780px;font-size:11px;line-height:1.85}
+.source-table th,.source-table td{padding:13px 12px;border:1px solid var(--line);text-align:left;vertical-align:top;min-width:130px}
+.source-table th{background:var(--green-wash)}.source-table td:first-child{min-width:210px}.source-table small{display:block;margin-top:7px;font-size:10px;color:var(--muted)}
+.source-mobile{display:none}.source-card{border-bottom:1px solid var(--line);padding:14px 0}.source-card h4{font-size:14px;line-height:1.6}.source-card p{font-size:12px;margin:8px 0}.source-card small{display:block;margin-top:6px;font-size:11px;color:var(--muted)}
+.research-notes .pending{padding:14px 17px;background:var(--green-wash);border-left:2px solid var(--accent);margin-top:12px}
+.chapter-b :is(button,a,textarea,summary):focus-visible{outline-color:var(--lime)}
+.entry-foot .link-button{font-size:11px}button,a,summary{overflow-wrap:anywhere}p,li,dd,td{overflow-wrap:break-word}
+.seat-card,.seat-identity>span:last-child,.analysis-side,.record-card,.opinion-head>*{min-width:0}
+.topbar,.top-actions,.actions,.opinion-head{flex-wrap:wrap}.topbar{gap:12px}.dialog-body .speaker{color:var(--green)}
+/* Keep open exhibit cards equal in height; closed folders retain their compact size. */
+.exhibit-board{align-items:stretch}.exhibit-folder{align-self:start}.exhibit-folder[open]{align-self:stretch}
+/* Share each internal row while both native disclosure folders are open. */
+@supports (grid-template-rows:subgrid) and selector(details::details-content){
+ @media(min-width:581px){
+  .exhibit-board:has(>.exhibit-folder[open]~.exhibit-folder[open]){grid-template-rows:repeat(6,auto);row-gap:0}
+  .exhibit-board:has(>.exhibit-folder[open]~.exhibit-folder[open])>.exhibit-folder{display:grid;grid-row:span 6;grid-template-rows:subgrid}
+  .exhibit-board:has(>.exhibit-folder[open]~.exhibit-folder[open])>.exhibit-folder::details-content{display:contents}
+  .exhibit-board:has(>.exhibit-folder[open]~.exhibit-folder[open]) .exhibit-content{display:grid;grid-row:span 5;grid-template-rows:subgrid}
+  .exhibit-board:has(>.exhibit-folder[open]~.exhibit-folder[open]) .exhibit-content>.listing-mock{width:100%;max-width:none;margin:0}
+  .exhibit-board:has(>.exhibit-folder[open]~.exhibit-folder[open]) .exhibit-content>.evidence-limit{align-self:start}
+  .exhibit-board:has(>.exhibit-folder[open]~.exhibit-folder[open]) .mini-hearing{display:grid;grid-row:span 3;grid-template-rows:subgrid}
+  .exhibit-board:has(>.exhibit-folder[open]~.exhibit-folder[open]) .mini-hearing>.hearing-cue{align-self:start}
+  .exhibit-board:has(>.exhibit-folder[open]~.exhibit-folder[open]) .mini-hearing>.response-button{align-self:start;justify-self:start}
+  .exhibit-board:has(>.exhibit-folder[open]~.exhibit-folder[open]) .mini-hearing>.hearing-reply{align-self:start}
+ }
+}
+/* Shared rows align the condition label, heading, flow and body across A/B. */
+@media(min-width:541px){
+ .analysis-canvas{grid-template-rows:auto auto auto auto;row-gap:0}
+ .analysis-side{display:grid;grid-row:span 4;grid-template-rows:subgrid}
+ .analysis-side>h3,.analysis-side>.task-flow{align-self:start}
+}
+@media(max-width:700px){.fact-groups{grid-template-columns:1fr;gap:8px}.source-table-wrap{display:none}.source-mobile{display:block}.dialog-head{align-items:flex-start;gap:10px}.dialog-head h2{font-size:24px;overflow-wrap:anywhere}.dialog-head .secondary{white-space:normal;padding:8px 12px}.analysis-side h3{font-size:24px}.task-flow{flex-wrap:wrap}.site-foot{flex-wrap:wrap}}
+@media(max-width:540px){.cover{max-width:100%}.record-strip{grid-template-columns:minmax(0,1fr) 18px minmax(0,1fr);padding:12px;gap:6px}.date-value{font-size:22px}}
+
+</style>
+<style>
+.receipt{top:170px}
+.receipt-head{gap:8px;align-items:center;font-size:8px}
+.receipt-head span:first-child{flex-shrink:0}
+.receipt-head span:last-child{text-align:right}
+.receipt-title{font-size:12px}
+.receipt .mark{font-size:8px;padding-inline:3px}
+.cover-note{left:38px;right:auto;top:392px}
+@media(max-width:540px){
+ .cover{height:340px}
+ .receipt{top:130px}
+ .receipt-head{font-size:7px;gap:4px}
+ .receipt-title{font-size:9px}
+ .receipt .mark{font-size:6.5px;padding-inline:2px}
+ .cover-note{left:20px;right:auto;top:290px;max-width:140px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the hearing</a>
+<div class="wrap"><header class="topbar"><a class="brand" href="#top" aria-label="FoodLoop archive home"><svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M8 24C1 16 10 5 19 11l7 6c8 7 16-3 9-9" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M32 16c7 8-2 19-11 13l-7-6C6 16-2 26 5 32" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="m29 8 6-1 1 6M11 32l-6 1-1-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><span class="brand-name">FoodLoop</span><small>FUTURE DISPUTE ARCHIVE</small></div></a><div class="top-actions"><span class="top-case mono">HEARING / B5</span><button type="button" id="change-seat-top" data-action="seats" hidden>Change seats ↗</button><button type="button" id="open-guide" data-open="guide">Reading guide ↗</button></div></header></div>
+<main id="main">
+<section class="archive-cover" id="top" aria-labelledby="entry-title"><div class="wrap"><div class="hero-meta"><span class="eyebrow">FUTURE DISPUTE ARCHIVE / NO. 017</span><span class="dot"></span><span class="mono">BRISBANE · 11 NOV 2029</span></div><div class="hero-grid"><div><h1 id="entry-title">Sent.<br><em>What next?</em></h1><p class="hero-copy">One chicken meal. Two dates.<br>The lister says “I corrected it”; the buyer says “I did not notice”;<br>the platform says “the system has a record”. Which claim can you check?</p><div class="hero-cta"><a href="#entry" class="btn">Open the case file <span class="arrow">↗</span></a><small>One hearing · Two rounds of questions<br>Read the evidence. Ask your questions.</small></div></div><div class="cover" role="img" aria-label="Fictional exhibit illustration: the chicken meal package says Use by 8 Nov, while the booking screenshot says Use by 12 Nov."><div class="cover-grid"></div><div class="cover-tag mono">EXHIBITS / 01 + 03</div><div class="meal-pack"><svg class="meal-svg" viewBox="0 0 350 240" aria-hidden="true"><defs><linearGradient id="tray" x2="1" y2="1"><stop stop-color="#5c6259"/><stop offset="1" stop-color="#242e29"/></linearGradient><linearGradient id="crumb" x2="1" y2="1"><stop stop-color="#dcab55"/><stop offset="1" stop-color="#af712e"/></linearGradient><pattern id="crumbs" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="3" cy="4" r="2" fill="#efca7b"/><circle cx="11" cy="12" r="1.6" fill="#9b672e"/></pattern></defs><g id="tray-exhibit"><rect x="3" y="3" width="344" height="234" rx="24" fill="#bfc7b7"/><rect x="10" y="10" width="330" height="220" rx="20" fill="url(#tray)"/><path d="M219 22v194M227 122h96" stroke="#7a8174" stroke-width="5"/><path d="M38 67q12-43 60-34l58-4q44 7 42 41l-9 91q-10 37-57 40l-64-9q-42-6-37-48Z" fill="url(#crumb)"/><path d="M38 67q12-43 60-34l58-4q44 7 42 41l-9 91q-10 37-57 40l-64-9q-42-6-37-48Z" fill="url(#crumbs)" opacity=".7"/><path d="M240 45c20-18 64-9 72 11 18 30-13 49-39 47-35 6-49-34-33-58Z" fill="#d9cda7"/><path d="m250 57 36 25m-30-2 39-17" stroke="#e9dfc2" stroke-width="7" stroke-linecap="round"/><g fill="#8b9b52"><circle cx="252" cy="151" r="14"/><circle cx="273" cy="170" r="16"/><circle cx="301" cy="147" r="13"/><circle cx="305" cy="185" r="12"/></g><g fill="#d59143"><ellipse cx="248" cy="193" rx="12" ry="7" transform="rotate(-30 248 193)"/><ellipse cx="289" cy="138" rx="13" ry="7" transform="rotate(20 289 138)"/></g><path d="m20 20 308 10M20 216 331 200" stroke="white" stroke-width="5" opacity=".14"/></g></svg><div class="package-label"><span class="eyebrow" style="font-size:8px">CHILLED READY MEAL</span><div style="font-size:12px;font-weight:650;margin-top:4px">Chicken Schnitzel Meal</div><strong>USE BY 08 NOV</strong><div class="pack-mini"><span>KEEP REFRIGERATED</span><span>400 g</span></div></div></div><div class="receipt"><div class="receipt-head"><span>FoodLoop</span><span>E01 / SAVED SCREENSHOT</span></div><div class="receipt-title">Chilled cooked chicken schnitzel meal</div><div class="receipt-date">12 <span style="font-size:14px">NOV 2029</span></div><div style="font-size:10px;margin-bottom:14px">Use by · <span class="mark">Date shown when booked</span></div><small>Booked · 07 NOV 09:12<br>Collection: 08 NOV 17:30<br>A$3.00 / 1 meal</small></div><div class="stamp">One meal, two dates</div><div class="cover-note">The package never changed.<br>When did the page change,<br>and who can check?</div></div></div><div class="hero-foot"><span class="pill"><span class="dot"></span><b>Design fiction · English hearing case file B5</b></span><span>Characters, events, exhibits and interfaces are constructed; the cause of the illness remains unknown.</span></div></div></section>
+
+
+ <section class="entry wrap" id="entry" aria-labelledby="seat-picker-title">
+  <div class="access-preview" role="group" aria-labelledby="access-intro">
+   <p id="access-intro"><strong>One complaint, two access conditions</strong><span>Read A, then B.</span></p>
+   <dl>
+    <div><dt>A</dt><dd>The platform holds the complete record; both parties and the review judge see shared materials and a platform summary. The summary already states that the correction preceded handover.</dd></div>
+    <div><dt>B</dt><dd>Both parties and the review judge can also directly check the versions, precise times, original notification and technical statuses in the same record.</dd></div>
+   </dl>
+   <p class="comparison-purpose"><strong>Read with this question in mind: </strong>How does access to the same platform record affect the parties’ ability to check explanations and raise specific objections, and the work of finding, reading and explaining materials? The comparison takes place during a review after the event.</p>
+  </div>
+  <form class="entry-roles" id="seat-form" aria-labelledby="seat-picker-title">
+   <div class="roles-heading"><h2 id="seat-picker-title">Which seat will you take?</h2></div><p class="seat-boundary">Jordan’s “judge” seat chairs a fictional review. It carries no real judicial authority, independent food-testing capacity or access to secret evidence.</p>
+   <div class="role-grid" id="role-grid" role="radiogroup" aria-labelledby="seat-picker-title"></div>
+   <div class="seat-confirm"><p id="seat-preview" role="status">Choose a seat and see what you would ask first.</p><button class="primary" id="enter-seat" type="submit" disabled>Take your seat ↗</button></div>
+  </form>
+  <div class="entry-foot"><span>Notes are optional and stay in this page’s memory until refresh. They can be exported; they are not uploaded or used as research data.</span><button type="button" class="link-button" data-open="method">Creation, method and sources ↗</button></div>
+ </section>
+
+ <section class="hearing" id="hearing" aria-label="Hearing case file" hidden>
+  <section class="seat-prologue wrap" id="seat-prologue" aria-labelledby="prologue-title">
+   <aside class="prologue-badge" id="prologue-badge"></aside>
+   <div class="prologue-scene" id="prologue-scene"></div>
+  </section>
+  <nav class="case-nav" aria-label="Case file chapters">
+   <div class="wrap case-nav-inner">
+    <a href="#case-timeline">01 Timeline</a><a href="#condition-a">02 Condition A</a>
+    <a href="#condition-b">03 Condition B</a><a href="#opinion-comparison">04 Review opinions</a><a href="#afterword">05 Afterword</a>
+   </div>
+  </nav>
+  <section class="chapter chapter-timeline" id="case-timeline" aria-labelledby="timeline-title">
+   <div class="wrap">
+    <header class="timeline-intro" id="opening-stage"></header>
+    <div class="chapter-body"><div class="case-timeline">
+     <h3>From booking to review <small class="mono">NOVEMBER / 2029</small></h3>
+     <div class="timeline-nodes" id="timeline-nodes" role="group" aria-label="Case dates"></div>
+     <div class="day-panel" id="day-panel" aria-live="polite"></div>
+    </div>
+    <details class="fact-notes"><summary>Distinguish shared facts, character statements and unknowns</summary><div id="facts-content"></div></details><p class="chapter-next"><a href="#condition-a">Enter condition A · Read the shared materials ↓</a></p></div>
+   </div>
+  </section>
+  <section class="chapter chapter-a" id="condition-a" data-condition="A" aria-labelledby="a-title">
+   <div class="wrap">
+    <header class="chapter-head">
+     <p class="eyebrow"><span>ACT 02</span><strong>Condition A</strong></p><h2 id="a-title" tabindex="-1">Two exhibits. Two dates.</h2>
+     <p>Hear an account, then lay out the materials they hold.</p>
+    </header>
+    <div class="chapter-body"><article id="a-stage" aria-label="Statements and shared exhibits"></article>
+    <details class="material-tools"><summary>A · Supporting file</summary><div class="material-grid"></div></details></div>
+   </div>
+  </section>
+  <section class="chapter chapter-b" id="condition-b" data-condition="B" aria-labelledby="b-title">
+   <div class="wrap">
+    <header class="chapter-head">
+     <p class="eyebrow"><span>ACT 03</span><strong>Condition B</strong></p><h2 id="b-title" tabindex="-1">Open the same record.</h2>
+     <p>A already states that the correction preceded handover. Check the supporting record, then consider what the notification and receipt each establish.</p>
+    </header>
+    <div class="chapter-body"><article id="b-stage" aria-label="Correction and notification records"></article>
+    <details class="material-tools"><summary>B · Supporting file</summary><div class="material-grid"></div></details></div>
+   </div>
+  </section>
+  <section class="chapter chapter-end" id="opinion-comparison" data-condition="B" aria-labelledby="comparison-title"><div class="wrap comparison-end">
+   <header class="stage-heading" id="comparison-heading">
+    <p class="eyebrow"><span>ACT 04</span><strong>Review opinions</strong></p>
+    <h2 id="comparison-title" tabindex="-1">More to check, <br class="mobile-break">but not everything can be decided.</h2>
+    <p>These two opinions are the author’s analyses of a constructed case file, not findings from real participants or real legal judgements.</p>
+   </header>
+   <div class="chapter-body"><div class="opinion-grid"><article class="opinion-paper"><div class="opinion-id"><span>REVIEW / A</span><span>Verification summary only</span></div><h3>Explanations still pass<br>through the platform.</h3><p>Both parties can see that the two dates differ. The platform summary states that the correction preceded handover and that the gateway accepted a notification request.</p><p>However, the parties <strong>cannot independently check the versions, times and full notification behind the summary</strong>. Further questions or corrections still require the platform to select, relay and explain the materials.</p><p>The parties also need an opportunity to check the basis of the summary.</p><span class="verdict-label">Supporting records and a route to a response</span></article><article class="opinion-paper"><div class="opinion-id"><span>REVIEW / B</span><span>The same record is open to both parties</span></div><h3>One suspicion can be revised;<br>further questions become more specific.</h3><p>The disclosed platform record provides a checkable basis for Alex’s statement that the correction preceded handover; A’s summary already made the same claim. The difference between the pages alone no longer supports saying it was “changed after collection”.</p><p>The same log shows that <strong>the notification omitted the old and new dates; the gateway receipt confirms only acceptance of the request, not device delivery, opening, understanding or renewed consent</strong>.</p><p>Both parties gain an opportunity to check directly, while also taking on reading records and interpreting fields. The platform still needs to respond and correct errors.</p><span class="verdict-label">Readable records, explanations and corrections</span></article></div><div class="shared-unknown"><b>Unconfirmed in both conditions</b><div><p>The complete temperature history, actual device delivery, opening, understanding, renewed consent and the cause of the illness. Uncollected data establish neither success nor failure. Food should not be eaten after its use-by date, but being past that date alone does not establish the cause of this illness.</p><p><strong>The same unknowns, different opportunities to check. </strong>A already provides the platform’s account; B lets the parties directly check its supporting record and challenge specific fields. The unknowns remain the same because B only discloses existing records, adds no monitoring and retains the same prior events.</p></div></div>
+
+   <div class="my-comparison"><h3>Put your two notes side by side.</h3>
+   <p class="footnote" id="comparison-status"></p>
+   <div class="comparison">
+    <div><h3>A · First impression</h3><p id="comparison-a"></p></div>
+    <div><h3>B · After checking</h3><p id="comparison-b"></p></div>
+   </div>
+   </div>
+   <div class="actions">
+    <button type="button" class="primary" data-action="export">Export this seat’s notes ↓</button>
+    <a class="link-button" href="#condition-b">Revisit B ↑</a>
+    <a class="link-button" href="#condition-a">Revisit A ↑</a>
+    <a class="link-button" href="#afterword">Afterword ↓</a>
+   </div>
+   <p class="status" id="export-status" aria-live="polite"></p></div>
+  </div></section>
+  <section class="chapter chapter-analysis" id="afterword" aria-labelledby="analysis-title">
+   <div class="wrap">
+    <header class="chapter-head">
+     <p class="eyebrow"><span>AFTERWORD</span><strong>Afterword</strong></p>
+     <h2 id="analysis-title" tabindex="-1">What we are examining <br class="mobile-break">is work and access.</h2>
+     <p>Look back through Value Sensitive Design (VSD): how does record access affect checking, questioning and explanatory work? All three perspectives consider both B’s opportunities and its additional demands.</p>
+    </header>
+    <div class="chapter-body">
+     <div class="analysis-tabs" role="tablist" aria-label="Value analysis">
+      <button type="button" role="tab" id="analysis-tab-0" aria-selected="true" aria-controls="analysis-panel" data-analysis="0">Informed choice</button>
+      <button type="button" role="tab" id="analysis-tab-1" aria-selected="false" aria-controls="analysis-panel" tabindex="-1" data-analysis="1">Fair distribution</button>
+      <button type="button" role="tab" id="analysis-tab-2" aria-selected="false" aria-controls="analysis-panel" tabindex="-1" data-analysis="2">Accountability</button>
+     </div>
+     <div id="analysis-panel" role="tabpanel" aria-labelledby="analysis-tab-0" tabindex="0"></div>
+     <details class="research-notes"><summary>Researcher notes · Creation, method, sources and pending analysis</summary><div id="research-content"></div></details>
+    </div>
+   </div>
+  </section>
+<section class="closing"><div class="wrap closing-inner"><div><span class="eyebrow" style="color:#b6cb9f">CASE FILE / REMAINS OPEN</span><h2>“Sent” is a record.<br>Who still needs to do what to make a change actionable?</h2><p>The file ends here. The questions of responsibility continue with you.</p></div><a href="#case-timeline" class="text-btn" style="text-decoration:none">Reopen the case file ↗</a></div></section>
+ </section>
+</main>
+<footer class="wrap site-foot"><span>FoodLoop · Hearing case file B5</span><span>Conditions A and B compare access to the same event’s records.</span></footer>
+<dialog id="materials-dialog" aria-labelledby="dialog-title"><div class="dialog-head"><h2 id="dialog-title" tabindex="-1"></h2><form method="dialog"><button class="secondary" type="submit">Close</button></form></div><div class="dialog-body" id="dialog-body"></div></dialog>
+<noscript><p class="wrap">Enable JavaScript to choose a seat and read this single-file prototype.</p></noscript>
+<script>
+'use strict';
+// Same case and evidence in both access conditions.
+const dayData=[
+ {day:'07',tag:'Emily’s screenshot and account',title:'09:12 · Planning dinner for the 9th',text:'Emily books an unopened chilled cooked chicken schnitzel meal for A$3. The page says Use by 12 Nov. She saves a screenshot and plans to collect it on the 8th and eat it on the 9th.'},
+ {day:'08',tag:'Handover, payment and no verbal reminder: confirmed by both parties',title:'17:30 · Handover outside the library',text:'Alex states that he brought the food in a cooler bag. Emily says she saw the unopened package, trusted the booking information and did not recheck the date. She reports taking it home in a cooler bag and refrigerating it about 20 minutes later. Both confirm that the date correction was not mentioned verbally.'},
+ {day:'09',tag:'Eating and illness: Emily’s account',title:'20:00 meal · Discomfort around 23:00',text:'Still thinking of the 12th, Emily prepares dinner following the package’s heating instructions and eats it without rechecking the date. She experiences abdominal discomfort that night and suspects the meal. The file contains insufficient medical or food-testing evidence to establish the cause.'},
+ {day:'10',tag:'E01 / E02 / E03 / E06',title:'08:40 · The two dates are compared for the first time',text:'Emily revisits the current page: 8 Nov. Her booking screenshot says 12 Nov. The package also says USE BY 08 NOV. She submits a complaint and a package photo taken after eating, asking when the date changed and what notification was given.'},
+ {day:'11',tag:'One case · Two access conditions',title:'10:00 · The dispute enters review',text:'The food and events cannot be replayed. In both conditions, the platform holds the same version and notification records. What changes next is whether the parties can open them themselves.'}
+];
+
+const facts=[
+ ['The original package date is the 8th; it was neither altered nor obscured.','Handover was at 17:30 on the 8th, with A$3 paid in cash.','Neither party verbally mentioned the date correction at handover.','The booking screenshot says the 12th; the page at the time of complaint says the 8th.'],
+ ['Alex says he corrected his entry after noticing the error and expected the system to notify Emily.','Emily says she did not notice the notification or recheck the date.','Both parties report refrigeration and transport in cooler bags.','Emily reports abdominal discomfort after eating; the cause is undetermined.'],
+ ['The full temperature history and food condition from before purchase to consumption.','Whether the notification actually appeared on Emily’s device.','Whether Emily saw and understood the date change.','The cause of the illness, including other food or health factors.']
+];
+
+const roles=[
+ {id:'STATEMENT / EC',quote:'“I checked the date once.<br>Why should I have to guess whether it changed?”',body:'When I booked, the date was the 12th. With assignments due, I wanted to plan dinner for the 9th. I collected the unopened box on the 8th and refrigerated it at home as planned. Before eating, I checked the heating instructions but did not look for the date again.',body2:'I accept that I did not recheck. I did not notice a date-correction notification. But if you say there is a record, I want to know when it changed and exactly what the notification said. “The system notified you” is not enough for me.',question:'Why did you not recheck the package before collection and eating?',answer:'Emily: I thought the booking information was still valid, and the unopened package reassured me. Looking back, I did miss the date. That still leaves my question: after a correction, how does the system tell people who have already booked that their plans need to change?'},
+ {id:'STATEMENT / AM',quote:'“I corrected the mistake as soon as I noticed.<br>I thought the system would notify her next.”',body:'I bought the meal at a supermarket and listed it on FoodLoop when I unexpectedly had to go away. Entering the wrong date was my mistake. I corrected it to the 8th when I noticed. I never changed or covered the package label.',body2:'She arranged to collect it on the 8th, the package date itself. I assumed correcting the page would trigger a notification, so at handover I only checked the package and payment. I did not repeat the date. I do not accept describing this correction as concealment after collection.',question:'Why did you not mention it again in chat or at handover?',answer:'Alex: I left that next step to the system. I knew I needed to correct the information, but I did not confirm that she knew what had changed. If the platform expects a separate explanation from me, where should that requirement appear?'},
+ {id:'STATEMENT / SB',quote:'“I can check the system records.<br>I cannot testify to what they never recorded.”',body:'Internal records show version changes and a notification request accepted by the gateway. They do not show device delivery, reading or understanding. My summary must make those limits clear.',body2:'Under A, the current tool permits only a verification summary for the parties. If they want to check each detail, I have to keep searching and explaining. Under B, they can open the same record, but somebody still needs to explain the fields and handle follow-up responses.',question:'Is the platform’s work finished once records are opened?',answer:'Sarah: No. Records must be understandable, objections need responses and errors need a route to correction. Letting parties read for themselves also creates explanatory work. An exported file cannot do all of that automatically.'}
+];
+
+roles.push({id:'STATEMENT / JB',quote:'“Every conclusion<br>needs a stated basis.”',body:'I am Jordan Blake, chair of this fictional review, with no real judicial authority or independent food-testing capacity. I organise the presentation of materials, allow different accounts to be questioned and record what each condition establishes and leaves unknown.',body2:'Under A, I see only the shared materials and platform summary. Under B, I can inspect the same disclosed record as the parties. I have no secret evidence, and being the judge does not let me determine the cause of the illness.',question:'How will you form your review opinion?',answer:'Jordan: First state the basis for each judgement, then identify who needs to explain or provide more. Retain unknowns where the materials cannot answer, while checking whether the parties have opportunities to verify, challenge and receive a response.'});
+
+const evidenceTitles=['Booking screenshot','Current page','Package photo','Chat between the parties','Complete record','Complaint and summary'];
+
+function listing(date,isCurrent,compact=false){
+ const source=isCurrent?'10 NOV · CURRENT PAGE':'07 NOV · 09:12 · SAVED SCREENSHOT';
+ const details=compact?'':'<p>400 g · 1 meal · Original package unopened<br>Keep refrigerated; the lister says it has remained in the fridge.</p>';
+ const footer=compact?'':`<div class="listing-foot">Collection: 8 Nov 17:30 · Outside the campus library<br>${isCurrent?'This page does not display the complete version history.':'Booked · 7 Nov 2029, 09:12'}</div>`;
+ return `<div class="listing-mock"><div class="listing-header"><strong>FoodLoop</strong><span>${source}</span></div><div class="listing-body"><div class="listing-row"><span class="listing-name">Chilled cooked chicken schnitzel meal</span><span class="listing-price">$3</span></div>${details}<div class="listing-useby">Use by <mark>${date} Nov 2029</mark></div>${footer}</div></div>`;
+}
+function packagePhoto(illustrated=false){const tray=illustrated?'<svg viewBox="0 0 350 240" aria-hidden="true"><use href="#tray-exhibit"/></svg>':'';return '<div class="pack-evidence" role="img" aria-label="Fictional illustration of a package photo after eating, labelled Use by 08 Nov 2029">'+tray+'<div class="label">CHICKEN SCHNITZEL MEAL<br><b>USE BY 08 NOV 2029</b><br><span style="font-size:8px">Keep refrigerated at or below 5°C · 400 g</span></div><span class="photo-label">Fictional exhibit illustration · Submitted 10 Nov</span></div>';}
+function lockedRecord(){return `<div class="locked-record"><div class="lock-symbol"><svg width="22" height="25" viewBox="0 0 22 25" fill="none" aria-hidden="true"><rect x="3" y="10" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 10V7a5 5 0 0 1 10 0v3" stroke="currentColor" stroke-width="1.5"/><circle cx="11" cy="16" r="1.5" fill="currentColor"/></svg></div><span class="mono muted">ACCESS / PLATFORM ONLY</span><h3>The record is retained.<br>The parties cannot open it themselves.</h3><div class="redacted" aria-hidden="true"><i></i><i></i><i></i></div><p>Current access provides only E06’s verification summary:<br>corrected before handover; an update notification request accepted by the gateway.</p><span class="source-tag">The record exists; the parties lack access to retrieve it.</span></div>`;}
+function fullRecord(){return `<div class="evidence-topline"><span class="mono">L017 / R017 · VERSION HISTORY</span><span>The same record held by the platform · Fictional exhibit</span></div><h3>Changed field: Use by</h3><div class="record-strip"><div class="date-value"><small>Before correction · Initial version v1</small><time datetime="2029-11-12">12 November</time></div><span class="arrow" aria-hidden="true">→</span><div class="date-value"><small>After correction · Version v2</small><time datetime="2029-11-08">8 November</time></div></div><div class="record-meta">Corrected: 7 Nov 2029, 16:42:11 (before handover) · Alex Morgan’s account</div><div class="log-row"><time>16:42:12</time><div>Notification N017 generated for booking R017.<br><q>The information for your booked food has been updated. Please check the latest page.</q></div></div><div class="log-row"><time>16:42:14</time><div>Gateway receipt: <span class="gateway">accepted_by_gateway</span><br>Confirms only that the notification gateway accepted the push request.</div></div><div class="log-row"><time>Not collected</time><div>Device delivery, opening, understanding and renewed consent.</div></div><details style="font-size:10px;margin-top:12px;color:var(--muted)"><summary style="cursor:pointer">View the other page fields shared by both versions</summary><p>Name: chilled cooked chicken schnitzel meal; weight: 400 g; quantity: 1 meal; price: A$3; the listing says the original package is unopened and requires refrigeration, and the lister says it has remained in the fridge; collection: 8 Nov 17:30, outside the campus library. Initial version created: 2029-11-07 09:00; correction submitted: 2029-11-07 16:42:11. All other page fields are unchanged.</p></details><div class="record-notice">This record comes from the case’s fictional platform. It is not independent third-party verification and does not retrospectively generate data the system never collected.</div>`;}
+function evidenceContent(index){switch(index){
+ case 0:return `${listing('12',false)}<div class="evidence-note"><strong>Supports: </strong>Emily retained booking material displaying the 12th.<br><strong>Cannot establish alone: </strong>the later change time, notification status, food quality or cause of illness.</div>`;
+ case 1:return `${listing('8',true)}<div class="evidence-note"><strong>Supports: </strong>The current date differs from the booking screenshot.<br><strong>Cannot establish alone: </strong>Whether the date changed before or after handover.</div>`;
+ case 2:return `<h3>USE BY 08 NOV 2029</h3>${packagePhoto()}<div class="evidence-note">This photo was supplied after eating, with the package already opened. It cannot retrospectively establish sealing, storage or food quality before handover.<br><strong>Use-by concerns safety: </strong>the meal should not be eaten after that date; the date alone still cannot establish the cause of this illness.</div>`;
+ case 3:return `<h3>8 Nov · Chat before handover</h3><div class="chat-mock"><div><div class="chat-meta">15:50 · Emily Carter</div><div class="bubble">Still 5:30 outside the library?</div></div><div class="right"><div class="chat-meta">15:52 · Alex Morgan</div><div class="bubble">Yes. The package is unopened. I will bring it over.</div></div></div><div class="evidence-note">This is the complete saved chat constructed for this case. <strong>These messages do not mention the date.</strong><br>The absence of a verbal date reminder is separately confirmed by both parties in E06; it is not inferred from the chat.</div>`;
+ case 4:return lockedRecord();
+ case 5:return `<h3>10 Nov · Complaint and verification summary</h3><div class="summary-paper"><p><small>08:40 · Emily Carter</small><br>My stomach hurt after eating it last night; I do not know the cause. Looking back, the page says the 8th, but my booking screenshot says the 12th. Please tell me when it changed and what notification was sent.</p><p><small>09:05 · Sarah Bennett</small><br>We checked that the page date was corrected before handover. The system recorded an update notification push request for this booking, which the gateway accepted. We did not record device delivery or reading status. Please provide relevant photos, screenshots and messages.</p></div><details style="font-size:11px;margin-top:15px"><summary style="cursor:pointer">Jointly confirmed matters and other statements</summary><p>Both parties confirm handover at 17:30 on the 8th, A$3 cash payment and no verbal mention of the date or correction. Alex reports refrigeration after purchase and transport in a cooler bag. Emily reports transport in a cooler bag and refrigeration at home; she says she trusted the booking information, did not notice a correction notification and did not recheck the date. No complete temperature record exists.</p></details><div class="evidence-note">The initial summary is identical in A and B. Storage, attention and health details above remain statements; a complete private medical history is not required.</div>`;
+}}
+
+const valueData=[{"aTitle": "An explanation, still relayed by the platform.", "bTitle": "Checking the past cannot recreate an earlier choice.", "aFlow": ["Conflicting dates", "Existing summary", "Reliance on relaying"], "bFlow": ["The same record", "Check content and timing", "Refine the questions"], "aText": "Value tension: a short summary is easy to read, but the parties cannot independently check its basis. A’s summary already states that the correction preceded handover; Emily and Alex still need Sarah to explain the specific versions, times and notification.", "bText": "B lets Emily, Alex and Jordan check the same record; Sarah still needs to explain its fields. The benefit is closer inspection of what changed and when; the cost is the demand to read and understand. Retrospective checking cannot recreate the choice before eating, and providing information does not establish understanding or consent.", "takeaway": "Conditions: assess how specific the information is, when it appears and whether people can act on it. Clearer notifications and renewed confirmation are designs for later testing; they were not added to B.", "evidence": "E01 / E02 / E05 / E06; OLIO safety guidance (D1-E02–03); campus study §III (R1-E01); VSD §3–4.1"}, {"aTitle": "Tasks are distributed; verification still passes through the platform.", "bTitle": "Less relaying may be needed; reading and explanation remain.", "aFlow": ["Emily saves and asks", "Alex explains the correction", "Sarah retrieves and relays"], "bFlow": ["Parties check directly", "Interpret fields", "Sarah responds and corrects"], "aText": "Value tension: asking users to verify food information also requires examining their access to the materials. Emily saves screenshots and asks questions, Alex explains the error and correction, and Sarah retrieves, selects and relays records. An accurate summary may also save the parties reading time.", "bText": "B may reduce some of Sarah’s relaying and make the parties’ questions more specific. It also gives both parties and Jordan the task of reading logs and creates demand for field explanations. Those benefiting and carrying the work may overlap; this does not establish lower total workload or benefits for everyone.", "takeaway": "Conditions: examine time, language, technical understanding and readability. Actual time spent and differences in capability have not been measured. One person’s experience of asking questions in the campus study only suggests questions to investigate; it cannot represent everyone’s burden.", "evidence": "E01 / E04 / E05 / E06; OLIO safety guidance (D1-E01–03); campus study §III (R1-E02); trust study Table 2 (R3-E02)"}, {"aTitle": "The platform holds and summarises the record.", "bTitle": "Specific objections become possible; response duties remain.", "aFlow": ["Platform retains", "Platform summarises", "Parties rely on explanations"], "bFlow": ["Same record accessible", "Challenge a specific field", "Seek response and correction"], "aText": "Value tension: centralised explanation can make reading easier, while also determining which supporting details enter the summary. Emily, Alex and Jordan can question it but cannot independently compare it with the record. Sarah undertakes both retrieval and explanation.", "bText": "B lets the parties and Jordan point to a version, time or gap; Sarah still needs to respond and correct errors. Disclosure may expand opportunities for specific objections, but difficult or irrelevant fields may sustain dependence and create privacy costs. Access is limited to the relevant parties, not the public.", "takeaway": "Cross-layer relationship: record access rules (3.3) → dependencies in verification (3.1) → explanatory labour and the power to object (4.1). This is conditional reasoning within the case. Readability, source information, response duties and correction routes are still needed; improved real-world trust has not been demonstrated.", "evidence": "E05 / E06; OLIO reporting guidance (D3-E01–03); trust study §4, §6.1 (R3-E05–06); VSD §3.1–3.3"}];
+
+const seatProfiles={
+ emily:{name:'Emily Carter',first:'Emily',initials:'EC',role:'Buyer',roleIndex:0,task:'Check when the change occurred and exactly what you were told.',preview:'You first pick up the booking screenshot showing the 12th.',time:'10 NOV 2029 · 08:40 / EMILY’S PERSPECTIVE',title:'Dinner in the fridge<br>was already planned.',scene:['You put the screenshot beside the box. The screenshot says the 12th; the box says the 8th. You remember checking the date when booking and receiving an unopened package. You refrigerated it at home on the 8th and followed the heating instructions on the 9th without looking for the date again.','The cause of last night’s discomfort remains unknown. Now you want the platform to explain what happened between these two dates.'],mission:'“I did not recheck the date. But when it changed after booking, who should have told me what changed?”',questions:[['Was it changed after I collected it?','I worry the correction happened after collection. How can I check the timing?'],['What was I told?','What exactly did the notification say? Did it explain that the date changed from the 12th to the 8th?'],['How can I check the platform’s explanation?','If the summary omits something or is wrong, which record can I point to when objecting?']]},
+ alex:{name:'Alex Morgan',first:'Alex',initials:'AM',role:'Lister',roleIndex:1,task:'Explain your correction and examine your expectations of automatic notification.',preview:'You first recall pressing save after noticing the date error.',time:'07 NOV 2029 · 16:42 / ALEX’S PERSPECTIVE',title:'You corrected the date,<br>then left the next step to the system.',scene:['The package says the 8th, but you notice that you entered the 12th on the page. You correct it, knowing Emily plans to collect on the 8th, and assume the system will notify people who have booked.','At review, you admit the original error and that you did not mention the date at handover. You want the other party to check your correction, while beginning to ask whether the record supports everything you assumed the system had done.'],mission:'“I made the correction. How far must I go in notifying someone afterwards?”',questions:[['How can my correction be checked?','I want Emily to check that the correction preceded handover. What supporting material can she see herself?'],['Did the system explain it for me?','I assumed the automatic notification would tell her the date changed. Does the record support that expectation?'],['What should I do after correcting it?','After the page correction, how should the parties and platform share the work of explanation and confirmation?']]},
+ sarah:{name:'Sarah Bennett',first:'Sarah',initials:'SB',role:'Platform reviewer',roleIndex:2,task:'Check system records, explain statuses accurately and respond to both parties’ objections.',preview:'You first open the internal version and notification records that the parties cannot currently see.',time:'10 NOV 2029 · 09:05 / SARAH’S PERSPECTIVE',title:'You can see the record.<br>You are accountable for explaining it.',scene:['You checked the internal versions: the correction preceded handover, and the notification gateway accepted a push request. The records do not show whether Emily’s device displayed it or whether she read or understood it. You must distinguish what can be confirmed from what was not recorded.','You can read the same complete record in A and B. In A, the parties depend on your summary; in B, they can check for themselves. Your access does not increase, but the work of providing a basis, explaining fields and responding to objections changes.'],mission:'“How can an accurate summary give both parties an opportunity to check, challenge and receive a response?”',questions:[['Explain the correction’s basis','How should I explain the correction time and show both parties where its basis can be found?'],['Explain “sent”','Which statuses were recorded, and which must remain unknown?'],['Respond to both parties’ objections','After disclosure, which explanations and responses remain my responsibility?']]},
+ judge:{name:'Jordan Blake',first:'Jordan',initials:'JB',role:'Review judge',roleIndex:3,task:'Organise the exhibits and separate supported claims from unknowns.',preview:'Two pages arrive on your desk: one meal, two dates.',time:'11 NOV 2029 · 10:00 / JORDAN’S PERSPECTIVE',title:'Present the materials,<br>then decide whom to ask next.',scene:['You chair a fictional review, without real judicial authority or independent food-testing capacity. Emily submits a screenshot, Alex admits correcting the page and Sarah brings a verification summary. Everyone holds part of the basis, but how far does each part support a conclusion?','In A, you and the parties see only shared materials and the summary. In B, the same record opens to you and both parties. You have no secret evidence. Your task is to organise questions, record judgements and retain what the materials cannot establish.'],mission:'“Please state the separate evidence for ‘a notification was initiated’ and ‘the other person understood’.”',questions:[['Check the correction time first','Please explain the basis for the correction time and whether the parties can inspect it directly.'],['Unpack the word “sent”','Please distinguish notification content, gateway acceptance, device display and understanding. Which step has a record?'],['Who can challenge, and who responds?','If a party disagrees with the platform summary, who should provide the basis, respond to the objection and handle errors?']]}
+};
+
+const commonReplies={
+ a:['The initial platform summary states that the correction preceded handover, but current access provides no route for you to retrieve the relevant version and change time yourself.','The initial summary states that the notification gateway accepted an update request; it omits the full message. We collected no device-display, reading or understanding status.','Under A, you can keep asking me, and I will consult internal materials and respond. Selection, relaying and field explanations all pass through the platform.'],
+ b:['The disclosed record shows use_by changing from the 12th to the 8th at 16:42:11 on 7 November; handover was at 17:30 on the 8th. You can now check the entry in detail.','The full notification reads “The information for your booked food has been updated. Please check the latest page.” It omits the old and new dates. Gateway acceptance does not establish that Emily saw and understood it.','You can now point directly to the same version and notification fields. The platform still needs to explain fields, answer objections and handle errors; disclosure also adds reading and explanatory work.']
+};
+const counterVoices={
+ emily:{speaker:'Alex',a:['I admit the error and correction. I also want her to check my account of the timing.','I assumed the system would notify people who had booked, so I did not mention the date at handover.','If only the platform can check, I also depend on Sarah to explain my correction.'],b:['This timestamp supports my account of correcting it before handover; I still need to explain the original error.','I took “system notification” to mean she would know the specific change. The receipt does not establish that whole chain of expectations.','I need to know what to do after a correction, and the platform needs to make its requirements clear.']},
+ alex:{speaker:'Emily',a:['The two pages I hold differ. I want to check how the correction happened between them.','I did not notice a date-correction notification or recheck the date after receiving the package.','I want to check the basis of the explanation, rather than just keep asking for another explanation.'],b:['I revise my suspicion that it changed after collection, but still want to check the notification content.','The notification did not say the date changed to the 8th. The receipt still cannot tell me whether I saw and understood it.','I accept that I missed the package date, and also need clarity on how changes after booking are communicated.']},
+ judge:{speaker:'Emily',a:['I want to compare the 12th in my screenshot with the platform’s account of the correction.','My saying “I did not notice” and the system saying “a request was recorded” are different things.','If the summary leaves something out, I need to know how to point it out and receive a response.'],b:['I can now revise my earlier suspicion against a specific time.','This record shows the notification content and that the system did not record understanding.','With more opportunity to check, I still need someone to explain fields and respond to my objections.']}
+};
+
+const platformReplies={
+ a:['I checked the internal versions. The initial summary states that the correction preceded handover; current access gives both parties only a verification summary, with no route to retrieve the relevant version themselves.','I can read the saved notification and gateway receipt. The initial summary states that a push request was accepted but omits the full text; the receipt cannot establish device display, reading or understanding.','I will continue consulting records, providing summaries and explaining fields. Currently, both parties’ checks and objections pass through me. I need to state the summary’s basis and handle omissions or errors.'],
+ b:['Let us check the correction at 16:42:11 on the 7th together: the date changed from the 12th to the 8th; handover was at 17:30 on the 8th. My access is unchanged, and both parties can now check themselves.','You can now see the same full notification. It only says “The information for your booked food has been updated. Please check the latest page”, without the old and new dates. The limits of what was recorded remain unchanged.','You can point directly to a version or field. I still need to explain technical statuses, respond to objections and handle errors. Responsibility for this work also needs to be clear after raw records are provided.']
+};
+const $=selector=>document.querySelector(selector);
+const $$=selector=>Array.from(document.querySelectorAll(selector));
+const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const seatOrder=['emily','alex','sarah','judge'];
+const initials={emily:'EC',alex:'AM',sarah:'SB',judge:'JB'};
+const lenses={
+ emily:'Ask for the basis of the correction before handover and exactly what the notification said.',
+ alex:'Explain your correction time and check whether the notification explained what changed.',
+ sarah:'Use records to explain the correction, separating confirmed statuses from unknowns.',
+ judge:'Decide which statement can enter the opinion and which needs more questions.'
+};
+const seatTurns={
+ emily:{
+  opening:'I checked the date once. When did it change?',
+  a:'You say it changed before handover. Can I see when for myself?',
+  b:'I can check the time now. But how does “updated” tell me to change my dinner plans?',
+  prompts:['Write a question for the platform','After checking, what else would you ask?'],
+  sample:'I want to check the precise correction time and read the original notification.'
+ },
+ alex:{
+  opening:'I corrected it. What do I need to do next?',
+  a:'The summary relays my correction. I want Emily to check the timing herself.',
+  b:'The time can now be checked. I assumed she would know it was the date that changed, so I did not mention it when we met.',
+  prompts:['Write an explanation of your correction','If you could do it again, how would you make the date clear?'],
+  sample:'I corrected the date before handover. I would like the platform to show the precise time so Emily can check too.'
+ },
+ sarah:{
+  opening:'I checked the correction and notification. I need to explain them separately.',
+  a:'I can check the internal correction time. The summary already says it preceded handover, but the parties still cannot check the basis themselves.',
+  b:'Everyone can see the receipt now. I need to explain exactly what it confirms.',
+  prompts:['Draft a verification statement for both parties','How would you explain this gateway receipt?'],
+  sample:'The record shows the correction preceded handover. The notification gateway accepted the push request; device delivery was not recorded.'
+ },
+ judge:{
+  opening:'Which exhibit supports that statement?',
+  a:'I hold the platform summary. What else must I see before putting the correction time in my opinion?',
+  b:'We can now check the summary’s basis directly. Who can establish that “Emily already knew”?',
+  prompts:['Write a judgement supported at this point','Write a review opinion that retains the unknowns'],
+  sample:'According to the platform summary, the correction preceded handover. The precise time and original notification still need checking.'
+ }
+};
+const shortStatements={
+ emily:'I remember the screenshot saying the 12th. The box was unopened, so I ate it on the 9th as planned.',
+ alex:'I entered the package’s 8th as the 12th by mistake and corrected it when I noticed. I thought the system would notify her.',
+ sarah:'The correction and push request are recorded. Which step would you like to check first?',
+ judge:'Both dates are visible on the desk. Next, I want to establish when the page changed.'
+};
+const commonExhibits={
+ booking:{id:'E01',label:'Booking screenshot',preview:()=>listing('12',false,true),note:'The date displayed on the page when booked.'},
+ package:{id:'E03',label:'Package photo',preview:()=>packagePhoto(true),note:'Submitted by Emily after eating; the date label in the photo can be checked. It does not certify the condition at handover on the 8th.'}
+};
+const mainTimeline=[
+ {label:'Booking',title:'09:12 · Booking a chicken meal',text:'Emily saves a screenshot showing the 12th, planning collection on the 8th and consumption on the 9th. The later platform summary states that the correction preceded handover; this does not mean the corresponding log is open here.',exhibit:'booking'},
+ {label:'Handover',title:'17:30 · Handover outside the library',text:'Emily says she saw the unopened package and took it as planned. Both confirm no verbal date reminder. The available package photo was submitted with the complaint on the 10th, after eating.',exhibit:'package'},
+ {label:'Eating',title:'20:00 · Dinner as planned',text:'Emily does not recheck the date and reports abdominal discomfort that night; the cause is undetermined.'},
+ {label:'Complaint',title:'08:40 · The two dates are compared',text:'The current page and package say the 8th; the booking screenshot says the 12th. Emily complains to the platform.'},
+ {label:'Review',title:'10:00 · The hearing begins',text:'The dispute focuses on two questions: when was the correction made, and what did the notification say?'}
+];
+const reading=Object.fromEntries(seatOrder.map(key=>[key,{
+ day:0,a:'',b:'',aSpeaker:key,exhibits:{},recordOpen:false,noticeOpen:false,responses:{},analysis:0
+}]));
+let seat=null;
+let doc=null;
+let docCondition='A';
+let evidenceIndex=0;
+const current=()=>reading[seat];
+const sharedTurns={
+ booking:{asker:'Jordan',question:'Did you check the date again after booking?',responder:'Emily',answer:'No. I remembered the 12th, saw the unopened package and ate it on the 9th as planned.'},
+ package:{asker:'Jordan',question:'Was the date of the 8th mentioned separately at handover?',responder:'Alex',answer:'No. I thought the system would tell her about the correction, so I did not mention it when we met.'}
+};
+const recordTurns={
+ emily:{
+  correction:{asker:'Emily',question:'So I need to revise my suspicion that it was corrected after collection?',responder:'Sarah',answer:'The record supports a correction before handover. You can now check that time yourself.'},
+  notice:{asker:'Emily',question:'Does this receipt establish that I knew the date had moved earlier?',responder:'Sarah',answer:'This record shows the gateway accepted the request. Device delivery, opening, understanding and renewed consent were not collected; uncollected data establish neither success nor failure.'}
+ },
+ alex:{
+  correction:{asker:'Alex',question:'Can we now check my account of the correction time?',responder:'Emily',answer:'The times match. I revise my suspicion of a change after collection, and next want to see what the notification said.'},
+  notice:{asker:'Alex',question:'I thought the system would explain the date clearly. Does the record support that?',responder:'Sarah',answer:'The full message only says the information was updated. It does not list the 12th and the 8th. The receipt reaches only the gateway.'}
+ },
+ sarah:{
+  correction:{asker:'Jordan',question:'What can both parties confirm from this record?',responder:'Sarah',answer:'Correction on the 7th, handover on the 8th. Both parties can now check the summary against the same entry.'},
+  notice:{asker:'Jordan',question:'Please explain which step “sent” confirms.',responder:'Sarah',answer:'The gateway accepted the push request. Device display and whether Emily understood remain unrecorded.'}
+ },
+ judge:{
+  correction:{asker:'Jordan',question:'Which statement does this correction record support?',responder:'Alex',answer:'It supports my account of a correction before handover. I still need to explain entering the wrong date initially.'},
+  notice:{asker:'Jordan',question:'What supports saying “Emily already knew”?',responder:'Sarah',answer:'The existing receipt reaches only the notification gateway. Device display, reading and understanding were not recorded.'}
+ }
+};
+const hearingTurn=key=>sharedTurns[key]||recordTurns[seat][key];
+
+const canReadRecord=()=>seat==='sarah'||docCondition==='B';
+const voice=(name,quote,own=false)=>`<div class="voice${own?' own-voice':''}"><b>${name}</b><div>${own?'<small class="turn-cue">Your statement · </small>':''}<q>${quote}</q></div></div>`;
+function responseCard(key){
+ const turn=hearingTurn(key),expanded=Boolean(current().responses[key]);
+ const ownAnswer=turn.responder===seatProfiles[seat].first;
+ return `<div class="mini-hearing">
+  <p class="hearing-cue"><span>${turn.asker===seatProfiles[seat].first?'Your question':turn.asker+' asks'}</span><q>${turn.question}</q></p>
+  <button type="button" class="response-button" data-hearing="${key}" aria-controls="response-${key}" aria-expanded="${expanded}">${expanded?'Hide response ↑':ownAnswer?'Respond ↘':'Hear '+turn.responder+' respond ↘'}</button>
+  <div class="hearing-reply" id="response-${key}"${expanded?'':' hidden'}>${voice(turn.responder,turn.answer,ownAnswer)}</div>
+ </div>`;
+}
+function toggleResponse(button){
+ const key=button.dataset.hearing;
+ current().responses[key]=!current().responses[key];
+ const card=button.closest('.mini-hearing');
+ card.outerHTML=responseCard(key);
+ $('[data-hearing="'+key+'"]').focus({preventScroll:true});
+}
+function renderPrologue(){
+ const p=seatProfiles[seat];
+ $('#prologue-badge').innerHTML=`<span class="avatar">${p.initials}</span><strong>${p.name}</strong><small>Current seat / ${p.role}</small><p>${p.task}</p>`;
+ $('#prologue-scene').innerHTML=`<span class="eyebrow">${p.time}</span><h2 id="prologue-title" tabindex="-1">${p.title}</h2><p>${p.scene[0]}</p><div class="prologue-mission">${p.mission}</div><div class="prologue-bottom"><a class="primary" href="#case-timeline">Read with this question ↗</a><small>Four characters · One case file · Two access conditions</small></div>`;
+ $('#change-seat-top').hidden=false;
+}
+function renderAnalysis(index){
+ const item=valueData[index];
+ current().analysis=index;
+ $$('[data-analysis]').forEach((button,i)=>{
+  button.setAttribute('aria-selected',String(i===index));
+  button.tabIndex=i===index?0:-1;
+ });
+ const side=(phase,title,flow,text)=>`<article class="analysis-side"><p class="eyebrow">CONDITION ${phase}</p><h3>${title}</h3><div class="task-flow">${flow.map((step,i)=>`${i?'<i aria-hidden="true">→</i>':''}<span>${step}</span>`).join('')}</div><p>${text}</p></article>`;
+ $('#analysis-panel').innerHTML=`<div class="analysis-canvas">${side('A',item.aTitle,item.aFlow,item.aText)}${side('B',item.bTitle,item.bFlow,item.bText)}</div><p class="analysis-takeaway">${item.takeaway}<small>Basis and related exhibits ${item.evidence}</small></p>`;
+ $('#analysis-panel').setAttribute('aria-labelledby','analysis-tab-'+index);
+}
+
+function opinion(phase){
+ const isA=phase==='a';
+ const prompt=seatTurns[seat].prompts[isA?0:1];
+ return `<div class="opinion-form">
+  <div class="opinion-head">
+   <label for="opinion-${phase}">${prompt} <span class="footnote">· Optional</span></label>
+   <button class="link-button" id="sample-${phase}" type="button" data-action="sample"${!isA&&!current().a?' hidden':''}>${isA?'Use example':'Keep A’s wording'}</button>
+  </div>
+  <textarea id="opinion-${phase}" data-opinion="${phase}" maxlength="200" rows="2">${esc(current()[phase])}</textarea>
+ </div>`;
+}
+function renderDay(index){
+ const day=mainTimeline[index];
+ current().day=index;
+ $$('#timeline-nodes button').forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));
+ $('#day-panel').innerHTML=`<time datetime="2029-11-${dayData[index].day}">${dayData[index].day}<small> NOV</small></time>
+  <div><h4>${day.title}</h4><p>${day.text}</p>
+  ${day.exhibit?`<button type="button" class="link-button" data-show-exhibit="${day.exhibit}">${day.exhibit==='package'?'View the package photo submitted with the complaint':'View the booking screenshot'} ↘</button>`:''}</div>`;
+}
+function sceneA(){
+ const {aSpeaker,exhibits}=current();
+ return `<p class="access-line"><strong>A · Only the platform can read the complete record. </strong>${seat==='sarah'?'You can also open the E05 internal record below.':'Your seat can read shared materials and the platform summary.'}</p>
+ <div class="witnesses">
+  <h3 id="desk-speakers">Whose account will you hear?</h3>
+  <div class="desk-choices" role="group" aria-labelledby="desk-speakers">
+   ${seatOrder.map(key=>`<button type="button" data-witness="${key}" aria-pressed="${key===aSpeaker}">${seatProfiles[key].first}</button>`).join('')}
+  </div>
+  <div class="voices" id="witness-voice" aria-live="polite"></div>
+ </div>
+ <h3 class="evidence-heading">Place the two exhibits side by side</h3>
+ <div class="exhibit-board">
+  ${Object.entries(commonExhibits).map(([key,item])=>`<details class="exhibit-folder ${key}" data-exhibit="${key}"${exhibits[key]?' open':''}>
+   <summary><span class="eyebrow">${item.id} · Shared exhibit</span><strong>${item.label}</strong><span class="folder-action">Open exhibit</span></summary>
+   <div class="exhibit-content">${item.preview()}<p class="evidence-limit">${item.note}</p>${responseCard(key)}</div>
+  </details>`).join('')}
+ </div>
+ <div class="summary-card desk-summary"><p class="eyebrow">E06 / PLATFORM SUMMARY</p><p>The platform summary states that the correction preceded handover and that the gateway accepted the push request. A already provides this account; the parties lack the opportunity to check the relevant versions, precise times, full notification and technical statuses themselves.</p></div>
+ ${opinion('a')}
+ <div class="actions">
+  <a class="primary" href="#condition-b">Continue to check the record ↓</a>
+  <button class="link-button" type="button" data-open="record">${seat==='sarah'?'Read E05 internal record':'Check E05 access'}</button>
+ </div>`;
+}
+function renderWitness(key){
+ current().aSpeaker=key;
+ $$('[data-witness]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.witness===key)));
+ $('#witness-voice').innerHTML=voice(seatProfiles[key].first,shortStatements[key],seat===key);
+}
+function sceneB(){
+ const {a,recordOpen,noticeOpen}=current();
+ return `<p class="access-line"><strong>B · Both parties and the review judge can read the same record already held by the platform. </strong>Sarah’s access is unchanged. Only retrospective access changes: no new notification, confirmation, tracking, refund, penalty or temperature record is added.</p>
+ <aside class="b-purpose" aria-labelledby="b-purpose-title"><h3 id="b-purpose-title">B adds an opportunity to check</h3><p>The parties can check the summary’s basis against specific versions, precise times and the original notification, identify gaps and ask for explanations. Sarah’s access is unchanged; field explanations and responses to objections remain necessary.</p><p class="footnote">Consider: which claims can you now check yourself? Can questions become more specific? Who does the finding, reading and explaining? Disclosure does not guarantee understanding or a response.</p></aside>
+ <details class="hearing-drawer version-drawer" id="correction-drawer"${recordOpen?' open':''}>
+  <summary><span class="mono">01</span> Open the correction record</summary>
+  <div class="drawer-content">
+   <div class="record-card">
+    <p class="record-notice">A constructed platform record for this case, not independent third-party verification. Complete refers only to the version and notification fields specified as retained.</p>
+    <h3>E05 · Use by</h3>
+    <div class="date-pair">
+     <div><small>Before correction</small><time datetime="2029-11-12">12 November</time></div>
+     <span class="arrow" aria-hidden="true">→</span>
+     <div><small>After correction</small><time datetime="2029-11-08">8 November</time></div>
+    </div>
+    <dl class="record-moments">
+     <div><dt>Alex’s correction</dt><dd><time datetime="2029-11-07T16:42:11">7 Nov, 16:42:11</time></dd></div>
+     <div><dt>Handover</dt><dd><time datetime="2029-11-08T17:30:00">8 Nov, 17:30</time></dd></div>
+    </dl>
+   </div>
+   ${responseCard('correction')}
+  </div>
+ </details>
+ <details class="hearing-drawer notice-drawer" id="notice-drawer"${noticeOpen?' open':''}>
+  <summary><span class="mono">02</span> Open the notification and receipt</summary>
+  <div class="drawer-content">
+   <div class="notice-text">
+    <p class="eyebrow">N017 · ORIGINAL NOTIFICATION · <time datetime="2029-11-07T16:42:12">16:42:12</time> generated</p>
+    <blockquote>“The information for your booked food has been updated. Please check the latest page.”</blockquote>
+   </div>
+   <dl class="notice-status">
+    <div><dt>Receipt · <time datetime="2029-11-07T16:42:14">16:42:14</time></dt><dd>The notification gateway accepted the push request.</dd></div>
+    <div><dt>Not recorded by the system</dt><dd>Device delivery, opening, understanding and renewed consent. Uncollected data establish neither success nor failure.</dd></div>
+   </dl>
+   ${responseCard('notice')}
+  </div>
+ </details>
+ <div class="b-opinion" id="b-opinion">
+  <p class="previous-note" id="previous-a"${a?'':' hidden'}>A’s note · <q>${esc(a)}</q></p>
+  ${opinion('b')}<div class="actions">
+   <a class="primary" href="#opinion-comparison">Compare your notes ↓</a>
+   <button class="link-button" type="button" data-open="record">Check the complete record</button>
+  </div>
+ </div>
+ <p class="chapter-next"><a href="#condition-a">Revisit the shared exhibits ↑</a></p>`;
+}
+function updateComparison(){
+ const r=current();
+ const a=r.a.trim(),b=r.b.trim();
+ let status='Scroll up to add notes.';
+ if(a&&b)status=a===b?'Your two notes are the same.':'Your two notes differ.';
+ $('#comparison-status').textContent=status;
+ $('#comparison-a').innerHTML=a?`<q>${esc(a)}</q>`:'No note left';
+ $('#comparison-b').innerHTML=b?`<q>${esc(b)}</q>`:'No note left';
+}
+function renderStage(){
+ const r=current();
+ $('#hearing').hidden=false;
+ renderPrologue();
+ $('#opening-stage').innerHTML='<p class="eyebrow"><span>ACT 01</span><strong>Conflicting dates</strong></p><h2 id="timeline-title" tabindex="-1">“The date I saw was the 12th.”</h2><p>From booking on the 7th to review on the 11th. Select a date to see what happened over these five days.</p>';
+ $('#timeline-nodes').innerHTML=mainTimeline.map((day,i)=>`<button type="button" data-day="${i}" aria-controls="day-panel"><time datetime="2029-11-${dayData[i].day}">${dayData[i].day}</time><span>${day.label}</span></button>`).join('');
+ renderDay(r.day);
+ $('#a-stage').innerHTML=sceneA();
+ renderWitness(r.aSpeaker);
+ $$('#a-stage [data-exhibit]').forEach(folder=>folder.addEventListener('toggle',()=>{
+  r.exhibits[folder.dataset.exhibit]=folder.open;
+ }));
+ $('#b-stage').innerHTML=sceneB();
+ const correction=$('#correction-drawer');
+ const notice=$('#notice-drawer');
+ correction.addEventListener('toggle',()=>{r.recordOpen=correction.open;});
+ notice.addEventListener('toggle',()=>{
+  r.noticeOpen=notice.open;
+ });
+ $('#export-status').textContent='';
+ $('#facts-content').innerHTML=renderFacts();
+ $('#research-content').innerHTML=methodContent();
+ updateComparison();
+ renderAnalysis(r.analysis);
+ jumpTo($('#prologue-title'),$('#seat-prologue'));
+ updateCaseNav();
+}
+const caseLinks=$$('.case-nav a');
+const chapters=caseLinks.map(link=>$(link.hash));
+function updateCaseNav(){
+ const readingLine=$('.case-nav').offsetHeight+32;
+ const currentChapter=chapters.find(chapter=>chapter.getBoundingClientRect().bottom>readingLine);
+ caseLinks.forEach(link=>{
+  if(link.hash==='#'+currentChapter?.id)link.setAttribute('aria-current','location');
+  else link.removeAttribute('aria-current');
+ });
+}
+window.addEventListener('scroll',()=>{if(seat)updateCaseNav();},{passive:true});
+function jumpTo(target,scrollTarget=target){
+ const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ scrollTarget.scrollIntoView({block:'start',behavior:reduceMotion?'instant':'smooth'});
+ target.focus({preventScroll:true});
+}
+function showExhibit(key){
+ const folder=$('#a-stage [data-exhibit="'+key+'"]');
+ folder.open=true;
+ jumpTo(folder.querySelector('summary'));
+}
+function saveOpinion(input){
+ const r=current(),phase=input.dataset.opinion;
+ r[phase]=input.value;
+ if(phase==='a'){
+  const previous=$('#previous-a');
+  previous.querySelector('q').textContent=r.a;
+  previous.hidden=!r.a;
+  $('#sample-b').hidden=!r.a;
+ }
+ updateComparison();
+}
+function fillSample(button){
+ const input=button.closest('.opinion-form').querySelector('textarea');
+ input.value=input.dataset.opinion==='a'?seatTurns[seat].sample:current().a;
+ saveOpinion(input);
+ input.focus();
+}
+function exportNote(){const r=current(),p=seatProfiles[seat];const lines=['FoodLoop · “Sent. What Next?” Hearing Case File B5','Seat: '+p.name+' / '+p.role,'','A’s note: '+(r.a.trim()||'No note left'),'','B’s note: '+(r.b.trim()||'No note left'),'','Design fiction. Notes stay in this page’s memory until refresh; there is no server upload or research data collection. This file records personal reading notes, not case facts, findings from real participants or a legal judgement.','Comparison purpose: examine how record access affects checking platform explanations, opportunities for specific objections and the distribution of finding, reading and explanatory work. A’s summary already states that the correction preceded handover; B opens the same record so the parties can check specific versions, times and the original notification. Uncollected device delivery, opening, understanding and renewed consent remain unknown. This case has not demonstrated improvements in real safety, trust or workload.'];const url=URL.createObjectURL(new Blob([lines.join('\n')],{type:'text/plain;charset=utf-8'}));const link=document.createElement('a');link.href=url;link.download='FoodLoop_B5_'+p.first+'_Review_Notes.txt';document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);$('#export-status').textContent='This seat’s notes have been prepared for download.';}
+const sourceRows=[
+ {name:'OLIO food-sharing and collection safety guidance (D1)',url:'https://help.olioapp.com/en/articles/12258374-what-food-safety-steps-should-i-follow-whether-giving-or-collecting',position:'What food safety steps should I follow, whether giving or collecting? Home kitchen subsection and the reporting paragraph at the end.',use:'Lister checks and storage, recipient questions, stopping collection or consumption if concerned, and the reporting route (D1-E01–04).',original:'D1_OLIO_food_safety_2026-11-06.html',extract:'FoodLoop_A3_首轮资料提取_v1_2026-11-06.md',application:'E01, E04, E06; informed choice and sharing verification tasks.',limit:'Published platform requirements do not establish actual user behaviour, that recipients carry all risk, the behaviour in this case or FoodLoop rules.',date:'Prior access record: 2026-11-06; B5 rechecked the local copy.'},
+ {name:'OLIO listing, editing and removal guidance (D2)',url:'https://help.olioapp.com/en/articles/12158761-how-do-i-add-edit-and-remove-my-listings',position:'How do I add, edit and remove my listings? Four editing steps and the first paragraph on removal or unlisting.',use:'Users can edit their own listings; unlisting differs from complete deletion, and the listing remains in the user’s records (D2-E01–02).',original:'D2_OLIO_edit_listings_2026-11-06.html',extract:'FoodLoop_A3_D2_D3_F1_补充核查_2026-11-06.md',application:'E01, E02, E05; date correction as the starting question.',limit:'Retaining a listing does not establish retention of every historical version. Post-booking date corrections, automatic notifications and version logs are constructed. The material used does not establish these mechanisms; this does not imply that the platform lacks them.',date:'Prior access record: 2026-11-06; the page then indicated “updated this week”.'},
+ {name:'OLIO reporting and problem-handling guidance (D3)',url:'https://help.olioapp.com/en/articles/12277035-how-do-i-report-issues-or-problems-on-olio',position:'How do I report issues or problems on Olio? Paragraphs on specific listings or messages, team triage and submitting materials.',use:'Identify a specific listing or message and submit relevant photos and screenshots; team triage and food-safety priority; no private or medical information required (D3-E01–03).',original:'D3_OLIO_reporting_2026-11-06.html',extract:'FoodLoop_A3_D2_D3_F1_补充核查_2026-11-06.md',application:'E03, E06; Sarah’s work of retrieval, explanation and response.',limit:'Published handling goals are not measured performance. This hearing, characters, 09:05 response and summary are constructed, not a reproduction of OLIO’s actual procedure.',date:'Prior access record: 2026-11-06; page dated 2026-10-01.'},
+ {name:'Campus food-sharing study: Share or Waste? (R1)',url:'https://ceur-ws.org/Vol-2382/ICT4S2019_paper_10.pdf',position:'Katzeff, Carlsson Kanyama & Zapico (2019), Share or Waste? Using an ICT-platform to share food on a university campus, ICT4S. PDF pp. 4–5 §III, pp. 5–6 §IV, p. 6 §V.',use:'Perceived status clarity, one participant’s experience of asking questions and collection-area access. Management, maintenance and traceability appear in the authors’ discussion or future proposals (R1-E01–05).',original:'R1_Share_or_Waste_2019.pdf',extract:'FoodLoop_A3_首轮资料提取_v1_2026-11-06.md',application:'Distinguishing statuses; tasks and access; fair distribution. The maintenance discussion only suggests questions for later checks over time.',limit:'Transfer is limited from short-term free campus sharing to individual sales. One person’s perception is neither a general burden nor a time measurement. The authors’ proposed trust effects do not validate record disclosure in this case.',date:'Prior access record: 2026-11-06; B5 rechecked the local page-by-page text.'},
+ {name:'Study of trust-related challenges in food-sharing platforms (R3)',url:'https://doi.org/10.1016/j.techfore.2025.124159',position:'Krishna, B. & Puram, P. (2025), The impact of trust-based challenges on user satisfaction in food sharing platforms: A text mining approach, Technological Forecasting and Social Change, 216, 124159. PDF pp. 5–7 §4 / Table 2, pp. 8–10 §5 / Table 3, p. 12 §6.1.',use:'Selected review quotations on information mismatch and repeated checking after notification problems, privacy discussion and advice on support access to historical data (R3-E01–02, E05–06). Inconsistent service-quality results across the two satisfaction models are retained (R3-E03–04).',original:'R3_Krishna_Puram_2025_trust_food_sharing.pdf',extract:'FoodLoop_A3_R3_2025信任研究_筛选记录_2026-11-06.md',application:'E01, E02, E05, E06; information differences, dependence on explanations, privacy and specific objections.',limit:'Reviews are quotations selected by the original authors, not this project’s participant data. Satisfaction proxies are not directly measured trust. Advice on support access to history does not validate record disclosure to the parties.',date:'Prior access record: 2026-11-06; B5 rechecked the local page-by-page text without reproducing the models.'},
+ {name:'FSANZ date-labelling guidance (F1)',url:'https://www.foodstandards.gov.au/consumer/labelling/dates',position:'Food Standards Australia New Zealand, Use-by and best-before dates; paragraphs on date meanings, specific storage conditions and use instructions.',use:'Use-by concerns safety: food should not be eaten after the date. Best-before mainly concerns quality. Follow label storage and use instructions (F1-E01–02).',original:'F1_FSANZ_date_marks_2026-11-06.html',extract:'FoodLoop_A3_D2_D3_F1_补充核查_2026-11-06.md',application:'E01–E03; conflict between the package’s 8th and planned consumption on the 9th.',limit:'Does not establish the complete temperature history or cause of illness. Following heating instructions and an unopened package do not guarantee safety.',date:'Prior access: 2026-11-06; revisited: 2026-11-08; page last updated 2025-02-25.'},
+ {name:'NSW date and storage guidance (F2)',url:'https://www.foodauthority.nsw.gov.au/food-labelling/stay-safe/date-marking-storage-labelling',position:'NSW Food Authority, Date marking and storage advice; Use by, Best before and Storage labelling subsections.',use:'Food may be unsafe after its use-by date even if it looks normal. Distinguish quality dates and follow storage and preparation instructions (F2-E01).',original:'F2_NSW_date_marks_2026-11-06.html',extract:'FoodLoop_A3_D2_D3_F1_补充核查_2026-11-06.md',application:'Cross-checks date meanings with F1 and limits the wording of review opinions.',limit:'Two official guides are not two independent pieces of incident evidence. They cannot diagnose this illness or allocate all responsibility.',date:'Prior access record: 2026-11-06; B5 uses the local copy.'},
+ {name:'Mealcare prepared chicken schnitzel meal information (P1)',url:'https://www.mealcare.com.au/products/chicken-schnitzel-gravy',position:'Chicken Schnitzel & Gravy; Heating & Storage subsection.',use:'Used only as a reference for a chilled meal category that requires heating and carries use-by and storage instructions.',original:null,extract:'FoodLoop_A3_D2_D3_F1_补充核查_2026-11-06.md',application:'Fictional food category; never frozen in this case.',limit:'The real brand is unrelated to this case. Its price, weight and heating parameters are not adopted or treated as general safety rules. The original HTML download returned HTTP 429; no local original webpage was successfully saved.',date:'Prior webpage reading record: 2026-11-06; product page not revisited in this round.'},
+ {name:'Original VSD method: Value Sensitive Design and Information Systems',url:'https://old.vsdesign.org/publications/pdf/non-scan-vsd-and-information-systems.pdf',position:'Friedman, B., Kahn, P. H., Jr., & Borning, A.; authors’ public manuscript. PDF p. 3 §3.1, p. 4 §3.2–3.3, p. 5 §4.1. Locations refer to the public manuscript read; no publication year is invented.',use:'Direct and indirect stakeholders, value tensions, iterative integration of conceptual, empirical and technical investigations, and the distinction between disclosure and understanding.',original:'VSD_Value_Sensitive_Design_and_Information_Systems_2026-11-08.pdf',extract:'FoodLoop_A3_B5_VSD核查与来源使用记录_2026-11-08.txt',application:'Informed choice, fair distribution and accountability structure the condition comparison. This project uses documentary materials, conceptual analysis and checks of a constructed mechanism.',limit:'No new interviews, observations or deployment validation with real stakeholders were conducted; completion of the full VSD empirical validation cannot be claimed. VSD is not evidence of effects in food sharing.',date:'Access and local original saved: 2026-11-08. This round’s checks were assisted by AI/tools; this does not establish that I have read the entire source.'}
+];
+
+function renderFacts(){
+ return '<p class="footnote">These categories describe the strength of the constructed case materials, not evidence of a real incident.</p><div class="fact-groups">'+facts.map((rows,i)=>`<section><h4>${['Jointly confirmed matters / Shared materials','Character statements','Not established by the available materials'][i]}</h4><ul>${rows.map(row=>`<li>${row}</li>`).join('')}</ul></section>`).join('')+'</div><p class="footnote">No verbal date reminder is jointly confirmed in E06. E03 is a package photo submitted with the complaint on the 10th, after eating; it does not certify the handover condition. Uncollected device delivery, opening, understanding and renewed consent establish neither success nor failure.</p>';
+}
+function sourceFiles(row){
+ const original=row.original?`<a href="../研究材料/原始资料/${row.original}" target="_blank" rel="noopener">Local original</a>`:'No local original webpage successfully saved';
+ const extract=row.extract?`<a href="../研究材料/${row.extract}" target="_blank" rel="noopener">Extraction and limitations record</a>`:'See this section’s text for this method check';
+ return `${original}<br>${extract}<small>${row.date}</small>`;
+}
+function sourceTable(){
+ const headings=['Source and original location','Material used here','Local originals and extraction files','Related setting or analysis','Inferences it cannot support'];
+ const cells=row=>[`<strong><a href="${row.url}" target="_blank" rel="noopener">${row.name} ↗</a></strong><p>${row.position}</p>`,row.use,sourceFiles(row),row.application,row.limit];
+ return '<div class="source-table-wrap" role="region" aria-label="Source uses and limitations table" tabindex="0"><table class="source-table"><caption>How real sources inform construction and analysis</caption><thead><tr>'+headings.map(h=>`<th scope="col">${h}</th>`).join('')+'</tr></thead><tbody>'+sourceRows.map(row=>'<tr>'+cells(row).map(c=>`<td>${c}</td>`).join('')+'</tr>').join('')+'</tbody></table></div><div class="source-mobile">'+sourceRows.map(row=>`<article class="source-card"><h4><a href="${row.url}" target="_blank" rel="noopener">${row.name} ↗</a></h4><p>${row.position}</p><p><b>Used: </b>${row.use}</p><p><b>Local material: </b>${sourceFiles(row)}</p><p><b>Related to: </b>${row.application}</p><p><b>Limits: </b>${row.limit}</p></article>`).join('')+'</div>';
+}
+function methodContent(){
+ return `<section class="research-section"><h3>How this case file was constructed</h3>
+ <p>This is the author’s documentary and scenario comparison, using Value Sensitive Design (VSD) as an analytical perspective and design fiction to present relationships between work and access. Real platform documentation, food-sharing studies and date guidance frame and limit the questions. The hearing procedure, four characters, dialogue, events, interfaces, six exhibits and logs are constructed; they do not establish a real incident or existing FoodLoop functionality.</p>
+ <p>The VSD source analyses values through iterative conceptual, empirical and technical investigations. This project uses documentary materials, stakeholder and value-tension analysis, and a conditional comparison of constructed record mechanisms. No new interviews, observations, surveys or workshops with real stakeholders were conducted. Four seats are not four participants. Webpage notes support personal reading reflection; they are neither uploaded nor used as participant research data.</p>
+ <p>Real sources, the fictional case file and researcher interpretation are presented separately. Real sources support only the background specified in the table. E01–E06 are constructed analytical materials. The two story review opinions and three value tabs are the author’s analyses under the stated conditions, not findings from real people, judicial rulings or deployment outcomes.</p></section>
+ <details class="research-section"><summary>What do A/B compare? How should B’s significance and limits be understood?</summary>
+ <p><strong>Comparison purpose: </strong>How record access affects the parties’ opportunities to check platform explanations and raise specific objections, and everyone’s work of finding, reading, relaying and explaining materials. This case examines those relationships through two access arrangements for the same event.</p>
+ <p>The comparison takes place during retrospective review on the 11th. Prior events, food, staff, notification content, summary, handling rules and stored backend fields are identical in A and B. A’s summary already states “corrected before handover”; Emily, Alex and Jordan cannot independently inspect the underlying versions, precise times, original notification and technical statuses. B only opens the same record already held by the platform; Sarah can inspect it in both conditions.</p>
+ <p><strong>The opportunities B provides in this case: </strong>Using the disclosed platform record, the parties can check the sequence of the correction at 16:42:11 on the 7th and handover on the 8th, then inspect the original notification. It omits the old and new dates, and the receipt reaches only the gateway. Questions can therefore target particular content, fields and gaps. The timing already claimed in the summary gains a directly checkable basis, with more specific objects for objections. The platform record’s provenance and credibility limits still apply.</p>
+ <p>“Complete” refers only to the version and notification fields specified as retained in this case. Device delivery, opening, understanding and renewed consent were never collected; disclosure cannot produce them. Platform records are not independent third-party verification. This page’s access conditions are a narrative simulation, not security isolation of local HTML content.</p>
+ <p><strong>Why comparison remains meaningful with the same unknowns: </strong>Opening existing materials can change who checks, how they challenge and who explains, without adding facts the materials never recorded. Readers can trace whether they can identify a specific version, distinguish the receipt’s meaning and identify questions still requiring Sarah’s response. Changing one’s opinion or determining the illness’s cause is not a required reading outcome.</p>
+ <p>This supports only conditional reasoning about retrospective checkability, dependence on explanations and possible work distribution. It does not establish changed prior choices, prevented illness, improved real trust or reduced actual workload. Reading A before B, repeatedly changing seats and the author writing all responses shape the reading; this is not an experiment testing intervention effects.</p>
+ <p>Accurate logs, condensed summaries and generic notifications are the author’s construction choices. They also shape the specific questions possible in B. A checkable scenario walkthrough cannot independently demonstrate that B works better in reality. If real stakeholders can raise equally specific objections using an accurate summary, or raw logs hinder understanding, the judgement should change accordingly. Readability, response and correction arrangements still require evaluation.</p>
+ <p>Alternative interpretations remain: an accurate A summary may take less reading than raw logs, and B’s fields may be difficult, preserving dependence on Sarah. R3’s service-quality topic has different results in star-rating and sentiment-score models, while satisfaction is not directly measured trust. R1’s single account of asking questions does not represent everyone’s burden.</p></details>
+ <details class="research-section"><summary>Source uses, original locations and transfer limits</summary>
+ <p>Internal IDs only help trace this project. IDs for real sources, such as D1 and R1, and their extraction IDs are separate from fictional exhibits E01–E06. Original webpage or paper links, page and section locations, and local originals support checking; extraction files do not replace original sources. A mechanism not described in the material used is not necessarily absent from that platform.</p>
+ ${sourceTable()}
+ <p class="footnote">Local material links follow the current A3draft directory structure. Moving this HTML alone to another folder leaves the main narrative and interactions functional; local research materials must accompany it separately or be checked through original webpages/DOIs. Most materials retain access records from 2026-11-06; only the FSANZ and VSD originals were actually revisited in this round.</p></details>
+ <details class="research-section"><summary>Research recommendations: who should check what next</summary>
+ <p>The product lead should further evaluate readable change records and field explanations, checking whether the parties can use them to raise specific objections. The platform operations lead should clarify who provides supporting material, answers objections and handles errors. The evaluation lead could use scenario tasks with real stakeholders to check changes in understanding, reading burden and dependence. These are proposed responsibilities, not established FoodLoop positions.</p>
+ <p>Clearer date-change notifications, information appearing when action remains possible and renewed confirmation can be tested separately in the next design round; B did not add these mechanisms. If real stakeholders find concise summaries sufficient for equally specific objections, or raw logs impede understanding, the recommendations should change accordingly. Disclosure should also be limited to relevant fields and parties, with privacy costs examined.</p></details>
+ <details class="research-section"><summary>Time analysis: five days within the case and system checks over time</summary>
+ <p>The 7th–11th form this case’s five-day timeline. 2029 is a fictional narrative date, not an operational observation. An “imagined third year” cannot replace research across time.</p>
+ <p class="pending">Pending research input: there are no confirmed completed results for the original plan’s system-condition checks at 6 months, 18 months and 3 years. This space remains for brief results after checking conditions, drivers, changes to role work and access, real-world grounding and unknowns. User growth, budget changes and staff departures are not invented.</p></details>
+ <details class="research-section"><summary>AI assistance and my review</summary>
+ <p>AI assisted with drafting the case, CSS/JavaScript, code checking, source organisation and analytical drafts.</p>
+ <p>The final hearing format, visual presentation, analyses adopted and their rationale remain subject to my review.</p></details>`;
+}
+
+const docNames={guide:'Reading guide',timeline:'Complete timeline',statements:'Character statements',evidence:'Six exhibits',record:'E05 · Complete record',questions:'Three sets of questions',method:'Creation, method and sources'};
+const appendixKeys=['timeline','statements','evidence','questions','method'];
+$$('.material-grid').forEach(grid=>{
+ grid.innerHTML=appendixKeys.map(key=>`<button type="button" data-open="${key}">${docNames[key]}</button>`).join('');
+});
+const roleLabels=['Emily Carter','Alex Morgan','Sarah Bennett','Jordan Blake'];
+function renderQuestions(){
+ const p=seatProfiles[seat],key=docCondition.toLowerCase();
+ return `<p class="footnote">${docCondition} condition · ${p.name}’s ${seat==='sarah'?'responses':'asks'}</p>`+p.questions.map(([label,question],i)=>{
+ const counter=counterVoices[seat]||counterVoices.emily;
+ const lines=seat==='sarah'?[['Emily',seatProfiles.emily.questions[i][1]],['Sarah',platformReplies[key][i]],['Alex',counterVoices.emily[key][i]]]:[[p.first,question],['Sarah',commonReplies[key][i]],[counter.speaker,counter[key][i]]];
+ return `<details><summary>${i+1} · ${label}</summary>${lines.map(([speaker,line])=>`<div class="dialogue-line"><span class="speaker">${speaker}</span><p>${line}</p></div>`).join('')}</details>`;
+ }).join('');
+}
+function renderEvidence(){
+ const stage=$('#doc-evidence');if(!stage)return;
+ stage.innerHTML=evidenceIndex===4?(canReadRecord()?fullRecord():lockedRecord()):evidenceContent(evidenceIndex);
+}
+function renderDoc(key){
+ if(key==='guide')return '<p>Choose a seat, then scroll through the timeline and exhibits. Each exhibit includes a question; select the response to expand it. The correction, notification, review opinions and afterword are all on the same page.</p><p>A/B compare who can check the basis of platform explanations, raise specific objections and undertake the work during retrospective review. B only discloses existing records, so both conditions retain the same unknowns. Sarah can read the complete record in A and B; other seats see shared materials and the summary in A and can also open E05 in B. Each supporting file follows its own condition’s access rules.</p><p class="footnote">Scroll freely and open whichever material you want to check. Each seat’s notes stay in this page until refresh. Dialogue and exhibits are design fiction.</p>';
+ if(key==='timeline')return `<p class="footnote">November 2029 · Brisbane · Events shared by both conditions</p><ol class="doc-timeline">${dayData.map(d=>`<li><strong>${d.day} Nov · ${d.title}</strong><small>${d.tag}</small><p>${d.text}</p></li>`).join('')}</ol><details><summary>Shared confirmations, statements and unknowns</summary>${facts.map((rows,i)=>`<h3>${['Jointly confirmed','Parties’ statements','Not established by the available materials'][i]}</h3><ul>${rows.map(row=>`<li>${row}</li>`).join('')}</ul>`).join('')}</details>`;
+ if(key==='statements')return `<details><summary>This seat’s complete opening</summary>${seatProfiles[seat].scene.map(line=>`<p>${line}</p>`).join('')}</details>`+roles.map((role,i)=>`<details><summary>${roleLabels[i]}</summary><h3>${role.quote}</h3><p>${role.body}</p><p>${role.body2}</p><details><summary>Question: ${role.question}</summary><p>${role.answer}</p></details></details>`).join('');
+ if(key==='evidence')return `<p class="footnote">${docCondition} condition · ${seatProfiles[seat].name}’s access</p><label for="evidence-select">Choose an exhibit</label><select class="doc-select" id="evidence-select">${evidenceTitles.map((title,i)=>`<option value="${i}"${i===evidenceIndex?' selected':''}>E0${i+1} · ${title}${i===4&&!canReadRecord()?'(platform only)':''}</option>`).join('')}</select><div class="doc-evidence" id="doc-evidence" aria-live="polite"></div>`;
+ if(key==='record')return `<div class="doc-evidence">${canReadRecord()?fullRecord():lockedRecord()}</div>`;
+ if(key==='questions')return renderQuestions();
+ return methodContent();
+}
+function openDoc(key,condition='A'){
+ doc=key;
+ docCondition=condition;
+ $('#dialog-title').textContent=docNames[key];
+ $('#dialog-body').innerHTML=renderDoc(key);
+ if(key==='evidence')renderEvidence();
+ $('#materials-dialog').showModal();
+ $('#dialog-title').focus();
+}
+$('#role-grid').innerHTML=seatOrder.map((key,i)=>{
+ const p=seatProfiles[key];
+ return `<label class="seat-option">
+  <input class="seat-choice" type="radio" name="seat" value="${key}" aria-label="${p.name} · ${p.role}">
+  <span class="seat-card">
+   <span class="seat-card-top"><span class="seat-number mono">SEAT 0${i+1}</span><span class="seat-tick" aria-hidden="true"><span class="empty">Vacant</span><span class="chosen">Selected ✓</span></span></span>
+   <span class="seat-identity"><span class="avatar">${p.initials}</span><span><span class="seat-name">${p.name}</span><span class="seat-kind">${p.role}</span></span></span>
+   <q>${seatTurns[key].opening}</q>
+   <span class="seat-task"><small>Your task</small>${p.task}</span>
+  </span>
+ </label>`;
+}).join('');
+$('#seat-form').addEventListener('change',event=>{
+ const key=event.target.value;
+ $('#seat-preview').textContent=lenses[key];
+ $('#enter-seat').textContent=`Join as ${seatProfiles[key].first} ↗`;
+ $('#enter-seat').disabled=false;
+});
+$('#seat-form').addEventListener('submit',event=>{
+ event.preventDefault();
+ const key=new FormData(event.currentTarget).get('seat');
+ if(!key)return;
+ seat=key;
+ renderStage();
+});
+document.addEventListener('click',event=>{
+ const button=event.target.closest('button');if(!button)return;
+ if(button.dataset.open){
+  openDoc(button.dataset.open,button.closest('[data-condition]')?.dataset.condition);
+  return;
+ }
+ if(!seat)return;
+ if(button.dataset.hearing)toggleResponse(button);
+ if(button.dataset.analysis!==undefined)renderAnalysis(Number(button.dataset.analysis));
+ if(button.dataset.witness)renderWitness(button.dataset.witness);
+ if(button.dataset.day!==undefined)renderDay(Number(button.dataset.day));
+ if(button.dataset.showExhibit)showExhibit(button.dataset.showExhibit);
+ if(button.dataset.action==='seats')jumpTo($('#seat-picker-title'));
+ if(button.dataset.action==='sample')fillSample(button);
+ if(button.dataset.action==='export')exportNote();
+});
+document.addEventListener('keydown',event=>{
+ const tab=event.target.closest('[data-analysis]');
+ if(!tab||!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
+ event.preventDefault();
+ const tabs=$$('[data-analysis]');
+ let index=Number(tab.dataset.analysis);
+ if(event.key==='Home')index=0;
+ else if(event.key==='End')index=tabs.length-1;
+ else index=(index+(event.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;
+ renderAnalysis(index);
+ tabs[index].focus();
+});
+document.addEventListener('input',event=>{if(seat&&event.target.dataset.opinion)saveOpinion(event.target);});
+document.addEventListener('change',event=>{if(doc==='evidence'&&event.target.id==='evidence-select'){evidenceIndex=Number(event.target.value);renderEvidence();}});
+$('#materials-dialog').addEventListener('close',()=>{doc=null;});
+</script>
+</body>
+</html>
